@@ -4433,6 +4433,17 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 				end
 			end
 		})
+		local JawDistributionEnabled = PhaseTouch:Checkbox({
+			Label = "Attack Individually",
+			Value = false,
+			Callback = function(self, Value)
+				local SwitchValue = Switch2:GetValue()
+				if SwitchValue then
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
+				end
+			end
+		})
 		local PlayerValue = PhaseTouch:InputText({
 			Label = "Target to Interact With",
 			PlaceHolder = "Input player names, separate with ',",
@@ -4457,6 +4468,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 					if not Ultimate.Enabled then return end
 					local Creatures = cloneref(workspace:WaitForChild("Creatures"))
 					local LocalPlayer = cloneref(Players.LocalPlayer)
+					local PlayerValue = PlayerValue:GetValue()
+					local speaker = plr
+
+					Ultimate.AttackIndividually = JawDistributionEnabled
 					Ultimate.AllowedTypes = {
 						Mender = MenderEnabled:GetValue(),
 						Parasite = ParasiteEnabled:GetValue(),
@@ -4601,7 +4616,7 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 						end
 					end
 					
-					return Ultimate
+					Ultimate.Attack(getPlayer(PlayerValue, speaker))
 				end)
 			end
 		})
