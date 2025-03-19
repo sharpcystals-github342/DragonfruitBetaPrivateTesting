@@ -4380,69 +4380,27 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 		})
 		local MenderEnabled = PhaseTouch:Checkbox({
 			Label = "Mender Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local ParasiteEnabled = PhaseTouch:Checkbox({
 			Label = "Parasite Enabled",
 			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
 		})
 		local JawsEnabled = PhaseTouch:Checkbox({
 			Label = "Jaws Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local SpikeEnabled = PhaseTouch:Checkbox({
 			Label = "Spike Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local FeederEnabled = PhaseTouch:Checkbox({
 			Label = "Feeder Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local JawDistributionEnabled = PhaseTouch:Checkbox({
 			Label = "Attack Individually",
-			Value = false,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = false
 		})
 		local PlayerValue = PhaseTouch:InputText({
 			Label = "Target to Interact With",
