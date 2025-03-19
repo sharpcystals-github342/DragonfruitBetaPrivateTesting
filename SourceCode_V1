@@ -3668,16 +3668,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 	end
 	function utils.despawn_creature()
 		local baseplate = Baseplate
-		local prevPos
-		if baseplate then 
-			prevPos = baseplate.Position
-		else
-			return false
-		end
 		firetouchinterest(getRoot(), baseplate, 0)
 		task.wait(0.1)
 		firetouchinterest(getRoot(), baseplate, 1)
-        if Workspace:FindFirstChild(Player.Name) then Workspace:WaitForChild("BuildingGrids"):WaitForChild(Player.Name):WaitForChild("Remotes"):WaitForChild("Spectate"):InvokeServer(); notify("Dragonfruit forcefully despawned your creature", true); return end
+        if Workspace.Creatures:FindFirstChild(Player.Name) then Workspace:WaitForChild("BuildingGrids"):WaitForChild(Player.Name):WaitForChild("Remotes"):WaitForChild("Spectate"):InvokeServer(); notify("Dragonfruit forcefully despawned your creature", true); return end
 		notify("Dragonfruit despawned your creature", true)
 	end
 	function despawnCreature()
@@ -4386,58 +4380,23 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 		})
 		local MenderEnabled = PhaseTouch:Checkbox({
 			Lable = "Mender Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local ParasiteEnabled = PhaseTouch:Checkbox({
 			Lable = "Parasite Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local JawsEnabled = PhaseTouch:Checkbox({
 			Lable = "Jaws Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local SpikeEnabled = PhaseTouch:Checkbox({
 			Lable = "Spike Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local FeederEnabled = PhaseTouch:Checkbox({
 			Lable = "Feeder Enabled",
-			Value = true,
-			Callback = function(self, Value)
-				local SwitchValue = Switch2:GetValue()
-				if SwitchValue then
-					Switch2:SetTicked(false)
-					Switch2:SetTicked(true)
-				end
-			end
+			Value = true
 		})
 		local PlayerValue = PhaseTouch:InputText({
 			Label = "Target to Interact With",
