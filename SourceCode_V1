@@ -4388,10 +4388,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 			Lable = "Mender Enabled",
 			Value = true,
 			Callback = function(self, Value)
-				local SwitchValue = Switch:GetValue()
+				local SwitchValue = Switch2:GetValue()
 				if SwitchValue then
-					Switch:SetTicked(false)
-					Switch:SetTicked(true)
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
 				end
 			end
 		})
@@ -4399,10 +4399,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 			Lable = "Parasite Enabled",
 			Value = true,
 			Callback = function(self, Value)
-				local SwitchValue = Switch:GetValue()
+				local SwitchValue = Switch2:GetValue()
 				if SwitchValue then
-					Switch:SetTicked(false)
-					Switch:SetTicked(true)
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
 				end
 			end
 		})
@@ -4410,10 +4410,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 			Lable = "Jaws Enabled",
 			Value = true,
 			Callback = function(self, Value)
-				local SwitchValue = Switch:GetValue()
+				local SwitchValue = Switch2:GetValue()
 				if SwitchValue then
-					Switch:SetTicked(false)
-					Switch:SetTicked(true)
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
 				end
 			end
 		})
@@ -4421,10 +4421,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 			Lable = "Spike Enabled",
 			Value = true,
 			Callback = function(self, Value)
-				local SwitchValue = Switch:GetValue()
+				local SwitchValue = Switch2:GetValue()
 				if SwitchValue then
-					Switch:SetTicked(false)
-					Switch:SetTicked(true)
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
 				end
 			end
 		})
@@ -4432,10 +4432,10 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 			Lable = "Feeder Enabled",
 			Value = true,
 			Callback = function(self, Value)
-				local SwitchValue = Switch:GetValue()
+				local SwitchValue = Switch2:GetValue()
 				if SwitchValue then
-					Switch:SetTicked(false)
-					Switch:SetTicked(true)
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
 				end
 			end
 		})
@@ -4446,8 +4446,8 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 			Callback = function(self, Value)
 				local SwitchValue = Switch2:GetValue()
 				if SwitchValue then
-					Switch:SetTicked(false)
-					Switch:SetTicked(true)
+					Switch2:SetTicked(false)
+					Switch2:SetTicked(true)
 				end
 			end
 		})
