@@ -4558,7 +4558,7 @@ function(ImGui, log, throw, PlaceName, hook, release_metadata, ImGui_main) -- Ev
 		InfiniteFood:Separator({
 			Text = nil
 		})
-
+		print(InfiniteFood)
 		Switch5 = InfiniteFood:Checkbox({
 			Label = "Enabled",
 			Value = false,
