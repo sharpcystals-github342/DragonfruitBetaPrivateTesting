@@ -1,0 +1,110 @@
+local Players = game:GetService("Players")
+local CoreGui = game:GetService("CoreGui")
+local LocalPlayer = Players.LocalPlayer
+
+-- Create the GUI
+local gui = Instance.new("ScreenGui")
+gui.Name = "SpeedBoostGui"
+gui.ResetOnSpawn = false
+
+-- Only set Parent to CoreGui if developer is verified and 18+
+-- Otherwise, fall back to PlayerGui
+local success, _ = pcall(function()
+    gui.Parent = CoreGui
+end)
+
+if not success then
+    gui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+end
+
+-- Create the button
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0, 32, 0, 32)
+button.Position = UDim2.new(0, 10, 1, -42) -- Bottom left with some padding
+button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+button.Text = "⚡" -- Lightning bolt emoji as icon
+button.TextSize = 20
+button.Parent = gui
+
+-- Add rounded corners
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0.2, 0)
+uiCorner.Parent = button
+
+-- Variables for cooldown
+local canUse = true
+local speedMultiplier = 5
+local boostDuration = 3
+local cooldownDuration = 10
+
+-- Function to update button appearance
+local function updateButtonAppearance(enabled)
+    button.BackgroundColor3 = enabled and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(150, 150, 150)
+end
+
+-- Function to find player's creature
+local function getPlayerCreature()
+    local creature = workspace.Creatures:FindFirstChild(LocalPlayer.Name)
+    if creature then
+        return creature:FindFirstChild("Humanoid")
+    end
+    return nil
+end
+
+-- Function to handle the speed boost
+local function activateSpeedBoost()
+    if not canUse then return end
+    
+    local humanoid = getPlayerCreature()
+    if not humanoid then return end
+    
+    local originalSpeed = humanoid.WalkSpeed
+    canUse = false
+    updateButtonAppearance(false)
+    
+    -- Apply speed boost
+    humanoid.WalkSpeed = originalSpeed * speedMultiplier
+    
+    -- Reset speed after duration
+    task.delay(boostDuration, function()
+        if humanoid and humanoid.Parent then
+            humanoid.WalkSpeed = originalSpeed
+        end
+    end)
+    
+    -- Reset cooldown
+    task.delay(cooldownDuration, function()
+        canUse = true
+        updateButtonAppearance(true)
+    end)
+end
+
+-- Connect button click
+button.MouseButton1Click:Connect(function()
+    activateSpeedBoost()
+end)
+
+-- Function to clean up
+local function cleanUp()
+    gui:Destroy()
+    canUse = false
+end
+
+-- Monitor player's creature for death
+local function startCreatureMonitor()
+    task.spawn(function()
+        while true do
+            local humanoid = getPlayerCreature()
+            if humanoid then
+                humanoid.Died:Connect(function()
+                    cleanUp()
+                    break
+                end)
+                break
+            end
+            task.wait(0.1)
+        end
+    end)
+end
+
+startCreatureMonitor()
