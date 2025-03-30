@@ -34,8 +34,8 @@ uiCorner.Parent = button
 -- Variables for cooldown
 local canUse = true
 local speedMultiplier = 5
-local boostDuration = 3
-local cooldownDuration = 10
+local boostDuration = 1.5
+local cooldownDuration = 3.5
 
 -- Function to update button appearance
 local function updateButtonAppearance(enabled)
