@@ -1,0 +1,6770 @@
+return(function(a)local b,d,e b,d,e=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'pre-0.1.0a',
+true,
+true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local f={}
+function f.HookSend(g,h)
+local j,l=pcall(function()
+local j={
+["Content-Type"]="application/json"
+}
+local l={
+Url=g,
+Method="POST",
+Headers=j,
+Body="{\"content\":\""..h.."\"}"
+}
+pcall(function()
+return request(l)
+end)
+end)
+if j then
+return l
+end
+end
+function f.ErrorHookSend(g)
+f.HookSend("https://discord.com/api/webhooks/1305029579764928604/X1iW6H8POYZV9OWeEdvx6_4mWVOZF4QYIIFT7_OMOcgs2q96RHcjG-hcwy91r7X8wRhB",g)
+end
+function ReportACriticalError(g)
+task.spawn(function()f.ErrorHookSend(g)end)
+local h,
+j=cloneref or function(h)return h end,{_RobloxGui=
+Instance.new"ScreenGui";_Roact=
+Instance.new"Frame";_CoreModules=
+Instance.new"UIListLayout";_UISizeConstraint=
+Instance.new"UISizeConstraint";_Holder=
+Instance.new"Frame";_Topbar=
+Instance.new"TextButton";_UIPadding=
+Instance.new"UIPadding";_UICorner=
+Instance.new"UICorner";_UIListLayout=
+Instance.new"UIListLayout";_Wopbar=
+Instance.new"TextButton";_UIPadding1=
+Instance.new"UIPadding";_UICorner1=
+Instance.new"UICorner";_CoreGui=
+Instance.new"TextLabel";_UIPadding2=
+Instance.new"UIPadding";_UICorner2=
+Instance.new"UICorner";_ATitle=
+Instance.new"Frame";_Topbar1=
+Instance.new"TextButton";_UIPadding3=
+Instance.new"UIPadding";_UICorner3=
+Instance.new"UICorner";_Roact2=
+Instance.new"Frame";_CoreModules1=
+Instance.new"UIListLayout";_UISizeConstraint1=
+Instance.new"UISizeConstraint";_Holder1=
+Instance.new"Frame";_UIListLayout1=
+Instance.new"UIListLayout";_Topbar2=
+Instance.new"TextButton";_UIPadding4=
+Instance.new"UIPadding";_UICorner4=
+Instance.new"UICorner";_ATitle1=
+Instance.new"Frame";_Topbar3=
+Instance.new"TextButton";_UIPadding5=
+Instance.new"UIPadding";_UICorner5=
+Instance.new"UICorner";_CoreGui1=
+Instance.new"TextLabel";_UIPadding6=
+Instance.new"UIPadding";_UICorner6=
+Instance.new"UICorner";
+}
+j._RobloxGui.Name="RobloxGui"
+j._RobloxGui.Parent=h(game:GetService"CoreGui")
+j._RobloxGui.DisplayOrder=200
+
+j._Roact.AnchorPoint=Vector2.new(0.5,0.5)
+j._Roact.AutomaticSize=Enum.AutomaticSize.XY
+j._Roact.BackgroundColor3=Color3.fromRGB(255,255,255)
+j._Roact.BackgroundTransparency=1
+j._Roact.BorderColor3=Color3.fromRGB(0,0,0)
+j._Roact.BorderSizePixel=0
+j._Roact.Position=UDim2.new(0.5,0,0.5,0)
+j._Roact.Size=UDim2.new(0,200,0,0)
+j._Roact.Name="Roact"
+j._Roact.Parent=j._RobloxGui
+
+j._CoreModules.Padding=UDim.new(0,10)
+j._CoreModules.HorizontalAlignment=Enum.HorizontalAlignment.Center
+j._CoreModules.Name="CoreModules"
+j._CoreModules.Parent=j._Roact
+
+j._UISizeConstraint.MaxSize=Vector2.new(400,math.huge)
+j._UISizeConstraint.Parent=j._Roact
+
+j._Holder.AutomaticSize=Enum.AutomaticSize.Y
+j._Holder.BackgroundColor3=Color3.fromRGB(255,255,255)
+j._Holder.BackgroundTransparency=1
+j._Holder.BorderColor3=Color3.fromRGB(0,0,0)
+j._Holder.BorderSizePixel=0
+j._Holder.Size=UDim2.new(1,0,0,0)
+j._Holder.Name="Holder"
+j._Holder.Parent=j._Roact
+
+j._Topbar.Font=Enum.Font.BuilderSansBold
+j._Topbar.Text="Ignore"
+j._Topbar.TextColor3=Color3.fromRGB(255,255,255)
+j._Topbar.TextSize=20
+j._Topbar.TextWrapped=true
+j._Topbar.AnchorPoint=Vector2.new(0.5,0)
+j._Topbar.AutomaticSize=Enum.AutomaticSize.XY
+j._Topbar.BackgroundColor3=Color3.fromRGB(195.0000035762787,65.0000037252903,140.00000685453415)
+j._Topbar.BorderColor3=Color3.fromRGB(0,0,0)
+j._Topbar.BorderSizePixel=0
+j._Topbar.Position=UDim2.new(0.5,0,0,0)
+j._Topbar.Name="Topbar"
+j._Topbar.Parent=j._Holder
+
+j._UIPadding.PaddingBottom=UDim.new(0,10)
+j._UIPadding.PaddingLeft=UDim.new(0,10)
+j._UIPadding.PaddingRight=UDim.new(0,10)
+j._UIPadding.PaddingTop=UDim.new(0,10)
+j._UIPadding.Parent=j._Topbar
+
+j._UICorner.CornerRadius=UDim.new(0,10)
+j._UICorner.Parent=j._Topbar
+
+j._UIListLayout.Padding=UDim.new(0,10)
+j._UIListLayout.FillDirection=Enum.FillDirection.Horizontal
+j._UIListLayout.HorizontalAlignment=Enum.HorizontalAlignment.Center
+j._UIListLayout.SortOrder=Enum.SortOrder.LayoutOrder
+j._UIListLayout.Parent=j._Holder
+
+j._Wopbar.Font=Enum.Font.BuilderSansBold
+j._Wopbar.Text="Report"
+j._Wopbar.TextColor3=Color3.fromRGB(255,255,255)
+j._Wopbar.TextSize=20
+j._Wopbar.TextWrapped=true
+j._Wopbar.AnchorPoint=Vector2.new(0.5,0)
+j._Wopbar.AutomaticSize=Enum.AutomaticSize.XY
+j._Wopbar.BackgroundColor3=Color3.fromRGB(255,108.00000116229057,180.00000447034836)
+j._Wopbar.BorderColor3=Color3.fromRGB(0,0,0)
+j._Wopbar.BorderSizePixel=0
+j._Wopbar.Position=UDim2.new(0.5,0,0,0)
+j._Wopbar.Name="Wopbar"
+j._Wopbar.Parent=j._Holder
+
+j._Wopbar.MouseButton1Click:Connect(function()
+j._Roact:Destroy()
+j._Roact2.Visible=true
+end)
+j._Topbar.MouseButton1Click:Connect(function()
+j._RobloxGui:Destroy()
+end)
+
+j._UIPadding1.PaddingBottom=UDim.new(0,10)
+j._UIPadding1.PaddingLeft=UDim.new(0,10)
+j._UIPadding1.PaddingRight=UDim.new(0,10)
+j._UIPadding1.PaddingTop=UDim.new(0,10)
+j._UIPadding1.Parent=j._Wopbar
+
+j._UICorner1.CornerRadius=UDim.new(0,10)
+j._UICorner1.Parent=j._Wopbar
+
+j._CoreGui.Font=Enum.Font.Code
+j._CoreGui.Text="An error occurred while Dragonfruit was running. Click 'Report' to report the error to the developers of Dragonfruit."
+j._CoreGui.TextColor3=Color3.fromRGB(255,0,10.000000353902578)
+j._CoreGui.TextSize=20
+j._CoreGui.TextWrapped=true
+j._CoreGui.TextXAlignment=Enum.TextXAlignment.Left
+j._CoreGui.TextYAlignment=Enum.TextYAlignment.Top
+j._CoreGui.AutomaticSize=Enum.AutomaticSize.XY
+j._CoreGui.BackgroundColor3=Color3.fromRGB(20.000000707805157,20.000000707805157,25.000000409781933)
+j._CoreGui.BorderColor3=Color3.fromRGB(0,0,0)
+j._CoreGui.BorderSizePixel=0
+j._CoreGui.Name="CoreGui"
+j._CoreGui.Parent=j._Roact
+
+j._UIPadding2.PaddingBottom=UDim.new(0,10)
+j._UIPadding2.PaddingLeft=UDim.new(0,10)
+j._UIPadding2.PaddingRight=UDim.new(0,10)
+j._UIPadding2.PaddingTop=UDim.new(0,10)
+j._UIPadding2.Parent=j._CoreGui
+
+j._UICorner2.CornerRadius=UDim.new(0,10)
+j._UICorner2.Parent=j._CoreGui
+
+j._ATitle.AutomaticSize=Enum.AutomaticSize.Y
+j._ATitle.BackgroundColor3=Color3.fromRGB(255,255,255)
+j._ATitle.BackgroundTransparency=1
+j._ATitle.BorderColor3=Color3.fromRGB(0,0,0)
+j._ATitle.BorderSizePixel=0
+j._ATitle.Size=UDim2.new(1,0,0,0)
+j._ATitle.Name="ATitle"
+j._ATitle.Parent=j._Roact
+
+j._Topbar1.Font=Enum.Font.BuilderSansBold
+j._Topbar1.Text="Dragonfruit Caught an Unexpected Error"
+j._Topbar1.TextColor3=Color3.fromRGB(255,255,255)
+j._Topbar1.TextSize=20
+j._Topbar1.AutoButtonColor=false
+j._Topbar1.AnchorPoint=Vector2.new(0.5,0)
+j._Topbar1.AutomaticSize=Enum.AutomaticSize.XY
+j._Topbar1.BackgroundColor3=Color3.fromRGB(20.000000707805157,20.000000707805157,25.000000409781933)
+j._Topbar1.BorderColor3=Color3.fromRGB(0,0,0)
+j._Topbar1.BorderSizePixel=0
+j._Topbar1.Position=UDim2.new(0.5,0,0,0)
+j._Topbar1.Name="Topbar"
+j._Topbar1.Parent=j._ATitle
+
+j._UIPadding3.PaddingBottom=UDim.new(0,10)
+j._UIPadding3.PaddingLeft=UDim.new(0,10)
+j._UIPadding3.PaddingRight=UDim.new(0,10)
+j._UIPadding3.PaddingTop=UDim.new(0,10)
+j._UIPadding3.Parent=j._Topbar1
+
+j._UICorner3.CornerRadius=UDim.new(0,10)
+j._UICorner3.Parent=j._Topbar1
+
+j._Roact2.AnchorPoint=Vector2.new(0.5,0.5)
+j._Roact2.AutomaticSize=Enum.AutomaticSize.XY
+j._Roact2.BackgroundColor3=Color3.fromRGB(255,255,255)
+j._Roact2.BackgroundTransparency=1
+j._Roact2.BorderColor3=Color3.fromRGB(0,0,0)
+j._Roact2.BorderSizePixel=0
+j._Roact2.Position=UDim2.new(0.5,0,0.5,0)
+j._Roact2.Visible=false
+j._Roact2.Size=UDim2.new(0,200,0,0)
+j._Roact2.Name="Roact2"
+j._Roact2.Parent=j._RobloxGui
+
+j._CoreModules1.Padding=UDim.new(0,10)
+j._CoreModules1.HorizontalAlignment=Enum.HorizontalAlignment.Center
+j._CoreModules1.Name="CoreModules"
+j._CoreModules1.Parent=j._Roact2
+
+j._UISizeConstraint1.MaxSize=Vector2.new(400,math.huge)
+j._UISizeConstraint1.Parent=j._Roact2
+
+j._Holder1.AutomaticSize=Enum.AutomaticSize.Y
+j._Holder1.BackgroundColor3=Color3.fromRGB(255,255,255)
+j._Holder1.BackgroundTransparency=1
+j._Holder1.BorderColor3=Color3.fromRGB(0,0,0)
+j._Holder1.BorderSizePixel=0
+j._Holder1.Size=UDim2.new(1,0,0,0)
+j._Holder1.Name="Holder"
+j._Holder1.Parent=j._Roact2
+
+j._UIListLayout1.Padding=UDim.new(0,10)
+j._UIListLayout1.FillDirection=Enum.FillDirection.Horizontal
+j._UIListLayout1.HorizontalAlignment=Enum.HorizontalAlignment.Center
+j._UIListLayout1.SortOrder=Enum.SortOrder.LayoutOrder
+j._UIListLayout1.Parent=j._Holder1
+
+j._Topbar2.Font=Enum.Font.BuilderSansBold
+j._Topbar2.Text="Yayyyy"
+j._Topbar2.TextColor3=Color3.fromRGB(255,255,255)
+j._Topbar2.TextSize=20
+j._Topbar2.TextWrapped=true
+j._Topbar2.AnchorPoint=Vector2.new(0.5,0)
+j._Topbar2.AutomaticSize=Enum.AutomaticSize.XY
+j._Topbar2.BackgroundColor3=Color3.fromRGB(255,108.00000116229057,180.00000447034836)
+j._Topbar2.BorderColor3=Color3.fromRGB(0,0,0)
+j._Topbar2.BorderSizePixel=0
+j._Topbar2.Position=UDim2.new(0.5,0,0,0)
+j._Topbar2.Name="Topbar"
+j._Topbar2.Parent=j._Holder1
+
+j._Topbar2.MouseButton1Click:Connect(function()
+j._RobloxGui:Destroy()
+end)
+
+j._UIPadding4.PaddingBottom=UDim.new(0,10)
+j._UIPadding4.PaddingLeft=UDim.new(0,10)
+j._UIPadding4.PaddingRight=UDim.new(0,10)
+j._UIPadding4.PaddingTop=UDim.new(0,10)
+j._UIPadding4.Parent=j._Topbar2
+
+j._UICorner4.CornerRadius=UDim.new(0,10)
+j._UICorner4.Parent=j._Topbar2
+
+j._ATitle1.AutomaticSize=Enum.AutomaticSize.Y
+j._ATitle1.BackgroundColor3=Color3.fromRGB(255,255,255)
+j._ATitle1.BackgroundTransparency=1
+j._ATitle1.BorderColor3=Color3.fromRGB(0,0,0)
+j._ATitle1.BorderSizePixel=0
+j._ATitle1.Size=UDim2.new(1,0,0,0)
+j._ATitle1.Name="ATitle"
+j._ATitle1.Parent=j._Roact2
+
+j._Topbar3.Font=Enum.Font.BuilderSansBold
+j._Topbar3.Text="Reported Error to Developers of Dragonfruit"
+j._Topbar3.TextColor3=Color3.fromRGB(255,255,255)
+j._Topbar3.TextSize=20
+j._Topbar3.AutoButtonColor=false
+j._Topbar3.AnchorPoint=Vector2.new(0.5,0)
+j._Topbar3.AutomaticSize=Enum.AutomaticSize.XY
+j._Topbar3.BackgroundColor3=Color3.fromRGB(20.000000707805157,20.000000707805157,25.000000409781933)
+j._Topbar3.BorderColor3=Color3.fromRGB(0,0,0)
+j._Topbar3.BorderSizePixel=0
+j._Topbar3.Position=UDim2.new(0.5,0,0,0)
+j._Topbar3.Name="Topbar"
+j._Topbar3.Parent=j._ATitle1
+
+j._UIPadding5.PaddingBottom=UDim.new(0,10)
+j._UIPadding5.PaddingLeft=UDim.new(0,10)
+j._UIPadding5.PaddingRight=UDim.new(0,10)
+j._UIPadding5.PaddingTop=UDim.new(0,10)
+j._UIPadding5.Parent=j._Topbar3
+
+j._UICorner5.CornerRadius=UDim.new(0,10)
+j._UICorner5.Parent=j._Topbar3
+
+j._CoreGui1.Font=Enum.Font.Code
+j._CoreGui1.Text="The error was reported to the Dragonfruit developers. We will begin investigating the issue and trying to replicate the issue to fix it, soon."
+j._CoreGui1.TextColor3=Color3.fromRGB(10.000000353902578,255,0)
+j._CoreGui1.TextSize=20
+j._CoreGui1.TextWrapped=true
+j._CoreGui1.TextXAlignment=Enum.TextXAlignment.Left
+j._CoreGui1.TextYAlignment=Enum.TextYAlignment.Top
+j._CoreGui1.AutomaticSize=Enum.AutomaticSize.XY
+j._CoreGui1.BackgroundColor3=Color3.fromRGB(20.000000707805157,20.000000707805157,25.000000409781933)
+j._CoreGui1.BorderColor3=Color3.fromRGB(0,0,0)
+j._CoreGui1.BorderSizePixel=0
+j._CoreGui1.Name="CoreGui"
+j._CoreGui1.Parent=j._Roact2
+
+j._UIPadding6.PaddingBottom=UDim.new(0,10)
+j._UIPadding6.PaddingLeft=UDim.new(0,10)
+j._UIPadding6.PaddingRight=UDim.new(0,10)
+j._UIPadding6.PaddingTop=UDim.new(0,10)
+j._UIPadding6.Parent=j._CoreGui1
+
+j._UICorner6.CornerRadius=UDim.new(0,10)
+j._UICorner6.Parent=j._CoreGui1
+
+end
+
+function getSHA()
+local g=4294967296 local h=g-1 local function c(j)local l={}local m=setmetatable({},l)function l.__index(n,o)local p=j(o)m[o]=p return p end return m end local function i(j,l)local function k(m,n)local o,p=0,1 while m~=0 and n~=0 do local q,s=m%l,n%l o=o+j[q][s]*p m=(m-q)/l n=(n-s)/l p=p*l end o=o+(m+n)*p return o end return k end local function r(j)local l=i(j,2)local m=c(function(m)return c(function(n)return l(m,n)end)end)return i(m,2^(j.n or 1))end local j=r{[0]={[0]=0,[1]=1},[1]={[0]=1,[1]=0},n=4}local function v(l,m,n,...)local o if m then l=l%g m=m%g o=j(l,m)if n then o=v(o,n,...)end return o elseif l then return l%g else return 0 end end local function y(l,m,n,...)local o if m then l=l%g m=m%g o=(l+m-j(l,m))/2 if n then o=bit32_band(o,n,...)end return o elseif l then return l%g else return h end end local function z(l)return(-1-l)%g end local function B(l,m)if m<0 then return lshift(l,-m)end return math.floor(l%4294967296/2^m)end local function D(l,m)if m>31 or m<-31 then return 0 end return B(l%g,m)end local function lshift(l,m)if m<0 then return D(l,-m)end return l*2^m%4294967296 end local function E(l,m)l=l%g m=m%32 local n=y(l,2^m-1)return D(l,m)+lshift(n,32-m)end local l={0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2}local function G(m)return string.gsub(m,".",function(n)return string.format("%02x",string.byte(n))end)end local function I(m,n)local o=""for p=1,n do local q=m%256 o=string.char(q)..o m=(m-q)/256 end return o end local function N(m,n)local o=0 for p=n,n+3 do o=o*256+string.byte(m,p)end return o end local function O(m,n)local o=64-(n+9)%64 n=I(8*n,8)m=m.."\128"..string.rep("\0",o)..n assert(#m%64==0)return m end local function S(m)m[1]=0x6a09e667 m[2]=0xbb67ae85 m[3]=0x3c6ef372 m[4]=0xa54ff53a m[5]=0x510e527f m[6]=0x9b05688c m[7]=0x1f83d9ab m[8]=0x5be0cd19 return m end local function U(m,n,o)local p={}for q=1,16 do p[q]=N(m,n+(q-1)*4)end for q=17,64 do local s=p[q-15]local t=v(E(s,7),E(s,18),D(s,3))s=p[q-2]p[q]=p[q-16]+t+p[q-7]+v(E(s,17),E(s,19),D(s,10))end local q,s,t,u,w,x,A,C=o[1],o[2],o[3],o[4],o[5],o[6],o[7],o[8]for F=1,64 do local H,J=v(E(q,2),E(q,13),E(q,22)),v(y(q,s),y(q,t),y(s,t))local K,L,M=H+J,v(E(w,6),E(w,11),E(w,25)),v(y(w,x),y(z(w),A))local P=C+L+M+l[F]+p[F]C,A,x,w,u,t,s,q=A,x,w,u+P,t,s,q,P+K end o[1]=y(o[1]+q)o[2]=y(o[2]+s)o[3]=y(o[3]+t)o[4]=y(o[4]+u)o[5]=y(o[5]+w)o[6]=y(o[6]+x)o[7]=y(o[7]+A)o[8]=y(o[8]+C)end return function(m)m=O(m,#m)local n=S{}for o=1,#m,64 do U(m,o,n)end return G(I(n[1],4)..I(n[2],4)..I(n[3],4)..I(n[4],4)..I(n[5],4)..I(n[6],4)..I(n[7],4)..I(n[8],4))end
+end
+local g,
+
+h=getSHA(),{}h.version=b h.premium=d h.dev_mode=e b,d,e=nil,nil,nil
+table.freeze(h)
+
+local j=g(h.version..tostring(h.premium))
+if h.dev_mode then
+print(j)
+end
+
+if j~=a then
+pcall(function()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ReportACriticalError"L (WHE) bro trying to reverse"
+end)
+local function randomString(l)
+local m,n,
+o,
+p=string.sub,math.random,"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",""
+for q=1,l do
+local s=n(1,#o)
+p=p..m(o,s,s)
+end
+return p
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+return false,(randomString(256)..((math.random()>=0.5)and"=="or"="))
+end
+
+function main(l)
+
+
+
+
+
+
+
+
+
+
+
+
+local function randomString(m)
+local n,
+o="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",""
+for p=1,m do
+local q=math.random(1,#n)
+o=o..string.sub(n,q,q)
+end
+return o
+end
+
+local m=game:GetService"RunService"
+m:IsStudio()
+
+
+local n do
+
+n=(function()
+
+
+
+
+local o,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p,
+q={Animations={Buttons={MouseEnter={BackgroundTransparency=0.5,},MouseLeave={BackgroundTransparency=0.7,}},Tabs={MouseEnter={BackgroundTransparency=0.5,},MouseLeave={BackgroundTransparency=1,}},Inputs={MouseEnter={BackgroundTransparency=0,},MouseLeave={BackgroundTransparency=0.5,}},WindowBorder={Selected={Transparency=0,Thickness=1},Deselected={Transparency=0.7,Thickness=1}},},Windows={},Animation=TweenInfo.new(0.35,Enum.EasingStyle.Quart,Enum.EasingDirection.Out),UIAssetId="rbxassetid://80900805031198"},function()end,cloneref or function(q)return q end
+local function GetService(...)
+return q(game:GetService(...))
+end
+
+function o.Warn(s,...)
+if s.NoWarnings then return end
+return warn("[IMGUI]",...)
+end
+
+
+local s,
+t,
+u,
+w,
+x=GetService"TweenService",GetService"UserInputService",GetService"Players",GetService"CoreGui",GetService"RunService"
+
+
+local A=u.LocalPlayer
+local C,
+
+
+F=A:GetMouse(),x:IsStudio()
+o.NoWarnings=not F
+
+
+function o.FetchUI(H)
+
+local J="DepsoImGui"
+if _G[J]then
+H:Warn"Prefabs loaded from Cache"
+return _G[J]
+end
+
+local K do
+
+
+
+local L=o.UIAssetId
+K=game:GetObjects(L)[1]end
+
+
+_G[J]=K
+return K
+end
+
+local H=o:FetchUI()
+local J=H.Prefabs
+o.Prefabs=J
+J.Visible=false
+
+
+local K={
+[{
+Name="Border"
+}]=function(K,L,M)
+local P=K:FindFirstChildOfClass"UIStroke"
+if not P then return end
+
+local Q=M.BorderThickness
+if Q then
+P.Thickness=Q
+end
+
+P.Enabled=L
+end,
+
+[{
+Name="Ratio"
+}]=function(K,L,M)
+local P,
+Q,
+R,
+
+T=M.RatioAxis or"Height",M.Ratio or 1.3333333333333333,M.AspectType or Enum.AspectType.ScaleWithParentSize,K:FindFirstChildOfClass"UIAspectRatioConstraint"
+if not T then
+T=o:CreateInstance("UIAspectRatioConstraint",K)
+end
+
+T.DominantAxis=Enum.DominantAxis[P]
+T.AspectType=R
+T.AspectRatio=Q
+end,
+
+[{
+Name="CornerRadius",
+Recursive=true
+}]=function(K,L,M)
+local P=K:FindFirstChildOfClass"UICorner"
+if not P then
+P=o:CreateInstance("UICorner",K)
+end
+
+P.CornerRadius=M.CornerRadius
+end,
+
+[{
+Name="Label"
+}]=function(K,L,M)
+local P=K:FindFirstChild"Label"
+if not P then return end
+
+P.Text=M.Label
+function M.SetLabel(Q,R)
+P.Text=R
+return M
+end
+end,
+
+[{
+Name="NoGradient",
+Aliases={"NoGradientAll"},
+Recursive=true
+}]=function(K,L,M)
+local P=K:FindFirstChildOfClass"UIGradient"
+if not P then return end
+P.Enabled=not L
+end,
+
+
+[{
+Name="Callback"
+}]=function(K,L,M)
+function M.SetCallback(P,Q)
+M.Callback=Q
+return M
+end
+function M.FireCallback(P,Q)
+return M.Callback(K)
+end
+end,
+
+[{
+Name="Value"
+}]=function(K,L,M)
+function M.GetValue(P)
+return M.Value
+end
+end,
+}
+
+function o.GetName(L,M)
+local P="%s_"
+return P:format(M)
+end
+
+function o.CreateInstance(L,M,P,Q)
+local R=Instance.new(M,P)
+for T,V in next,Q or{}do
+R[T]=V
+end
+return R
+end
+
+function o.ApplyColors(L,M,P,Q)
+for R,T in next,M do
+local V,
+W=R,false
+
+if typeof(R)=="table"then
+V=R.Name or""
+W=R.Recursive or false
+end
+
+
+if typeof(T)=="table"then
+local X=P:FindFirstChild(V,W)
+
+if not X then
+if Q=="Window"then
+X=P.Content:FindFirstChild(V,W)
+if not X then continue end
+else
+o:Warn(V,"was not found in",P)
+o:Warn("Table:",T)
+
+continue
+end
+end
+
+o:ApplyColors(T,X)
+continue
+end
+
+
+P[V]=T
+end
+end
+
+function o.CheckStyles(L,M,P,Q)
+
+for R,T in next,K do
+local V,
+W=P[R.Name],R.Aliases
+
+if W and not V then
+for X,Y in R.Aliases do
+V=P[Y]
+if V then break end
+end
+end
+if V==nil then continue end
+
+
+T(M,V,P)
+if R.Recursive then
+for X,Y in next,M:GetChildren()do
+T(Y,V,P)
+end
+end
+end
+
+
+local R=M.Name
+M.Name=L:GetName(R)
+
+
+local T=Q or{}
+local V=T[R]
+
+if V then
+o:ApplyColors(V,M,R)
+end
+
+
+for W,X in next,P do
+pcall(function()
+M[W]=X
+end)
+end
+end
+
+function o.MergeMetatables(L,M,P)
+local Q={}
+Q.__index=function(R,T)
+local V,W=pcall(function()
+local V=P[T]
+if typeof(V)=="function"then
+return function(...)
+return V(P,...)
+end
+end
+return V
+end)
+return V and W or M[T]
+end
+
+Q.__newindex=function(R,T,V)
+local W=M[T]
+if W~=nil or typeof(V)=="function"then
+M[T]=V
+else
+P[T]=V
+end
+end
+
+return setmetatable({},Q)
+end
+
+function o.Concat(L,M,P)
+local Q=""
+for R,T in next,M do
+Q=Q..tostring(T)..(R~=#M and P or"")
+end
+return Q
+end
+
+function o.ContainerClass(L,M,P,Q)
+local R,
+T=P or{},o.Windows[Q]
+
+function R.NewInstance(V,W,X,Y)
+
+X=X or{}
+
+
+W.Parent=Y or M
+W.Visible=true
+
+
+if T.NoGradientAll then
+X.NoGradient=true
+end
+
+local Z=T.Colors
+o:CheckStyles(W,X,Z)
+
+
+if X.NewInstanceCallback then
+X.NewInstanceCallback(W)
+end
+
+
+return o:MergeMetatables(X,W)
+end
+
+function R.Button(V,W)
+W=W or{}
+local X=J.Button:Clone()
+local Y=V:NewInstance(X,W)
+
+local function Callback(...)
+local Z=W.Callback or p
+return Z(Y,...)
+end
+X.Activated:Connect(Callback)
+
+
+o:ApplyAnimations(X,"Buttons")
+return Y
+end
+
+function R.Image(V,W)
+W=W or{}
+local X=J.Image:Clone()
+
+
+if tonumber(W.Image)then
+W.Image=string.format('rbxassetid://%s', tostring(W.Image))
+end
+
+local Y=V:NewInstance(X,W)
+local function Callback(...)
+local Z=W.Callback or p
+return Z(Y,...)
+end
+X.Activated:Connect(Callback)
+
+
+o:ApplyAnimations(X,"Buttons")
+return Y
+end
+
+function R.ScrollingBox(V,W)
+W=W or{}
+local X=J.ScrollBox:Clone()
+local Y=o:ContainerClass(X,W,Q)
+return V:NewInstance(X,Y)
+end
+
+function R.Label(V,W)
+W=W or{}
+local X=J.Label:Clone()
+return V:NewInstance(X,W)
+end
+
+function R.Checkbox(V,W)
+W=W or{}
+local X,
+
+Y=W.IsRadio,J.CheckBox:Clone()
+local Z=Y.Tickbox
+local _,
+aa,
+ab=Z.Tick,Y.Label,V:NewInstance(Y,W)
+
+
+if X then
+_.ImageTransparency=1
+_.BackgroundTransparency=0
+else
+Z:FindFirstChildOfClass"UIPadding":Remove()
+Z:FindFirstChildOfClass"UICorner":Remove()
+end
+
+
+o:ApplyAnimations(Y,"Buttons",Z)
+
+local ac=W.Value or false
+
+
+local function Callback(...)
+local ad=W.Callback or p
+return ad(ab,...)
+end
+
+function W.SetTicked(ad,ae,af)
+ac=ae
+W.Value=ac
+
+
+local ag=ac and UDim2.fromScale(1,1)or UDim2.fromScale(0,0)
+o:Tween(_,{
+Size=ag
+},nil,af)
+o:Tween(aa,{
+TextTransparency=ac and 0 or 0.3
+},nil,af)
+
+
+Callback(ac)
+
+return W
+end
+W:SetTicked(ac,true)
+
+function W.Toggle(ad)
+W:SetTicked(not ac)
+return W
+end
+
+
+local function Clicked()
+ac=not ac
+W:SetTicked(ac)
+end
+Y.Activated:Connect(Clicked)
+Z.Activated:Connect(Clicked)
+
+return ab
+end
+
+function R.RadioButton(aa,ab)
+ab=ab or{}
+ab.IsRadio=true
+return aa:Checkbox(ab)
+end
+
+function R.Viewport(aa,ab)
+ab=ab or{}
+local ac,
+
+ad=ab.Model,J.Viewport:Clone()
+local ae=ad.Viewport
+local af=ae.WorldModel
+ab.WorldModel=af
+ab.Viewport=ae
+
+function ab.SetCamera(ag,V)
+ae.CurrentCamera=V
+ab.Camera=V
+V.CFrame=CFrame.new(0,0,0)
+return ab
+end
+
+local ag=ab.Camera or o:CreateInstance("Camera",ae)
+ab:SetCamera(ag)
+
+function ab.SetModel(V,W,X)
+af:ClearAllChildren()
+
+
+if ab.Clone then
+W=W:Clone()
+end
+if X then
+W:PivotTo(X)
+end
+
+W.Parent=af
+ab.Model=W
+return W
+end
+
+
+if ac then
+ab:SetModel(ac)
+end
+
+local V=o:ContainerClass(ad,ab,Q)
+return aa:NewInstance(ad,V)
+end
+
+function R.InputText(aa,ab)
+ab=ab or{}
+local ac=J.TextInput:Clone()
+local ad,
+ae=ac.Input,aa:NewInstance(ac,ab)
+
+ad.Text=ab.Value or""
+ad.PlaceholderText=ab.PlaceHolder
+ad.MultiLine=ab.MultiLine==true
+
+
+o:ApplyAnimations(ac,"Inputs")
+
+local function Callback(...)
+local af=ab.Callback or p
+return af(ae,...)
+end
+ad:GetPropertyChangedSignal"Text":Connect(function()
+local af=ad.Text
+ab.Value=af
+return Callback(af)
+end)
+
+function ab.SetValue(af,ag)
+ad.Text=tostring(ag)
+ab.Value=ag
+return ab
+end
+
+function ab.Clear(af)
+ad.Text=""
+return ab
+end
+
+return ae
+end
+
+function R.InputTextMultiline(aa,ab)
+ab=ab or{}
+ab.Label=""
+ab.Size=UDim2.new(1,0,0,38)
+ab.MultiLine=true
+return R:InputText(ab)
+end
+
+function R.GetRemainingHeight(aa)
+local ab,
+ac=M:FindFirstChildOfClass"UIPadding",M:FindFirstChildOfClass"UIListLayout"
+
+local ad,
+ae,
+af=ac.Padding,ab.PaddingTop,ab.PaddingBottom
+
+local ag=ae+af+ad
+local V=M.AbsoluteSize.Y+ag.Offset+3
+
+return UDim2.new(1,0,1,-V)
+end
+
+function R.Console(aa,ab)
+ab=ab or{}
+local ac=J.Console:Clone()
+local ad,
+ae=ac.Source,ac.Lines
+
+if ab.Fill then
+ac.Size=R:GetRemainingHeight()
+end
+
+
+ad.TextEditable=ab.ReadOnly~=true
+ad.Text=ab.Text or""
+ad.TextWrapped=ab.TextWrapped==true
+ad.RichText=ab.RichText==true
+ae.Visible=ab.LineNumbers==true
+
+function ab.UpdateLineNumbers(af)
+if not ab.LineNumbers then return end
+
+local ag,
+V=#ad.Text:split"\n",ab.LinesFormat or"%s"
+
+
+ae.Text=""
+for W=1,ag do
+ae.Text=ae.Text..string.format('%s%s', tostring(V:format(W)), tostring(W~=ag and'\n'or''))
+end
+
+ad.Size=UDim2.new(1,-ae.AbsoluteSize.X,0,0)
+return ab
+end
+
+function ab.UpdateScroll(af)
+local ag=ac.AbsoluteCanvasSize.Y
+ac.CanvasPosition=Vector2.new(0,ag)
+return ab
+end
+
+function ab.SetText(af,ag)
+if not ab.Enabled then return end
+ad.Text=ag
+ab:UpdateLineNumbers()
+return ab
+end
+
+function ab.GetValue(af)
+return ad.Text
+end
+
+function ab.Clear(af,ag)
+ad.Text=""
+ab:UpdateLineNumbers()
+return ab
+end
+
+function ab.AppendText(af,...)
+if not ab.Enabled then return end
+
+local ag,
+V=ab.MaxLines or 100,"\n"..o:Concat({...}," ")
+
+ad.Text=ad.Text..V
+ab:UpdateLineNumbers()
+
+if ab.AutoScroll then
+ab:UpdateScroll()
+end
+
+local W=ad.Text:split"\n"
+if#W>ag then
+ad.Text=ad.Text:sub(#W[1]+2)
+end
+return ab
+end
+
+
+ad.Changed:Connect(ab.UpdateLineNumbers)
+
+return aa:NewInstance(ac,ab)
+end
+
+function R.Table(aa,ab)
+ab=ab or{}
+local ac=J.Table:Clone()
+local ad=#ac:GetChildren()
+
+
+if ab.Fill then
+ac.Size=R:GetRemainingHeight()
+end
+local ae,
+
+af="Row",0
+function ab.CreateRow(ag)
+local V,
+
+W={},ac.RowTemp:Clone()
+local X=W:FindFirstChildOfClass"UIListLayout"
+X.VerticalAlignment=Enum.VerticalAlignment[ab.Align or"Center"]
+
+local Y=#W:GetChildren()
+W.Name=ae
+W.Visible=true
+
+
+if ab.RowBackground then
+W.BackgroundTransparency=af%2==1 and 0.92 or 1
+end
+
+function V.CreateColumn(Z,_)
+_=_ or{}
+local ah=W.ColumnTemp:Clone()
+ah.Visible=true
+ah.Name="Column"
+
+local ai=ah:FindFirstChildOfClass"UIStroke"
+ai.Enabled=ab.Border~=false
+
+local aj=o:ContainerClass(ah,_,Q)
+return R:NewInstance(ah,aj,W)
+end
+
+function V.UpdateColumns(ah)
+if not W or not ac then return end
+local ai=W:GetChildren()
+local aj=#ai-Y
+
+for Z,_ in next,ai do
+if not _:IsA"Frame"then continue end
+_.Size=UDim2.new(1/aj,0,0,0)
+end
+return V
+end
+W.ChildAdded:Connect(V.UpdateColumns)
+W.ChildRemoved:Connect(V.UpdateColumns)
+
+af=af+1
+return R:NewInstance(W,V,ac)
+end
+
+function ab.UpdateRows(ag)
+local ah,
+ai=ac:GetChildren(),ac.UIListLayout.Padding.Offset+2
+local aj=#ah-ad
+
+for V,W in next,ah do
+if not W:IsA"Frame"then continue end
+W.Size=UDim2.new(1,0,1/aj,-ai)
+end
+return ab
+end
+
+if ab.RowsFill then
+ac.AutomaticSize=Enum.AutomaticSize.None
+ac.ChildAdded:Connect(ab.UpdateRows)
+ac.ChildRemoved:Connect(ab.UpdateRows)
+end
+
+function ab.ClearRows(ag)
+af=0
+local ah=o:GetName(ae)
+for ai,aj in next,ac:GetChildren()do
+if not aj:IsA"Frame"then continue end
+
+if aj.Name==ah then
+aj:Remove()
+end
+end
+return ab
+end
+
+return aa:NewInstance(ac,ab)
+end
+
+function R.Grid(aa,ab)
+ab=ab or{}
+ab.Grid=true
+
+return aa:Table(ab)
+end
+
+function R.CollapsingHeader(aa,ab)
+ab=ab or{}
+local ac=ab.Title or""
+ab.Name=ac
+
+local ad=J.CollapsingHeader:Clone()
+local ae,
+af=ad.TitleBar,ad.ChildContainer
+ae.Title.Text=ac
+
+
+if ab.IsTree then
+o:ApplyAnimations(ae,"Tabs")
+else
+o:ApplyAnimations(ae,"Buttons")
+end
+
+
+function ab.SetOpen(ag,ah)
+local ai=ab.NoAnimation~=true
+ab.Open=ah
+o:HeaderAnimate(ad,ai,ah,ae)
+return ag
+end
+
+
+local ag=ae.Toggle.ToggleButton
+local function Toggle()
+ab:SetOpen(not ab.Open)
+end
+ae.Activated:Connect(Toggle)
+ag.Activated:Connect(Toggle)
+
+
+if ab.Image then
+ag.Image=ab.Image
+end
+
+
+ab:SetOpen(ab.Open or false)
+
+local ah=o:ContainerClass(af,ab,Q)
+return aa:NewInstance(ad,ah)
+end
+
+function R.TreeNode(aa,ab)
+ab=ab or{}
+ab.IsTree=true
+return aa:CollapsingHeader(ab)
+end
+
+function R.Separator(aa,ab)
+ab=ab or{}
+local ac=J.SeparatorText:Clone()
+local ad=ac.TextLabel
+ad.Text=ab.Text or""
+
+if not ab.Text then
+ad.Visible=false
+end
+
+return aa:NewInstance(ac,ab)
+end
+
+function R.Row(aa,ab)
+ab=ab or{}
+local ac=J.Row:Clone()
+local ad,
+ae=ac:FindFirstChildOfClass"UIListLayout",ac:FindFirstChildOfClass"UIPadding"
+
+if ab.Spacing then
+ad.Padding=UDim.new(0,ab.Spacing)
+end
+
+function ab.Fill(af)
+local ag=ac:GetChildren()
+local ah,
+
+
+ai=#ag-2,ad.Padding.Offset*2
+ad.HorizontalAlignment=Enum.HorizontalAlignment.Center
+
+
+ae.PaddingLeft=ad.Padding
+ae.PaddingRight=ad.Padding
+
+for aj,V in next,ag do
+local W=0
+if V:IsA"ImageButton"then
+W=1
+end
+pcall(function()
+V.Size=UDim2.new(1/ah,-ai,W,0)
+end)
+end
+return ab
+end
+
+local af=o:ContainerClass(ac,ab,Q)
+return aa:NewInstance(ac,af)
+end
+
+
+
+
+function R.Slider(aa,ab)
+ab=ab or{}
+local ac,
+ad=ab.Value or 0,ab.Format or"%.d"
+ab.Name=ab.Label or""
+
+local ae=J.Slider:Clone()
+local af,
+ag,
+ah,
+ai=ae:FindFirstChildOfClass"UIPadding",ae.Grab,ae.ValueText,aa:NewInstance(ae,ab)
+
+local function Callback(...)
+local aj=ab.Callback or p
+return aj(ai,...)
+end
+
+
+if ab.Progress then
+local aj,
+V,
+
+W=ag:FindFirstChildOfClass"UIGradient",ae.Label,UDim.new(0,2)
+local X=af.PaddingLeft-W
+
+ag.AnchorPoint=Vector2.new(0,0.5)
+aj.Enabled=true
+
+af.PaddingLeft=W
+af.PaddingRight=W
+
+V.Position=UDim2.new(1,15-X.Offset,0,0)
+end
+
+function ab.SetValue(aj,V,W)
+local X,
+Y=ab.MinValue,ab.MaxValue
+local Z,
+_=Y-X,V/Y
+
+if W then
+_=V
+V=X+(Z*_)
+else
+V=tonumber(V)
+end
+
+
+local ak={
+Position=UDim2.fromScale(_,0.5)
+}
+
+if ab.Progress then
+ak={
+Size=UDim2.fromScale(_,1)
+}
+end
+
+o:Tween(ag,ak)
+
+ab.Value=V
+ah.Text=ad:format(V,Y)
+
+Callback(V)
+return ab
+end
+ab:SetValue(ac)
+
+local aj,
+ak=false,nil
+
+local function MouseMove()
+if ab.ReadOnly then return end
+if not aj then return end
+local V,
+W=t:GetMouseLocation().X,ae.AbsolutePosition.X
+
+local X=(V-W)/ae.AbsoluteSize.X
+X=math.clamp(X,0,1)
+ab:SetValue(X,true)
+end
+
+
+o:ConnectHover{
+Parent=ae,
+OnInput=function(V,W)
+if not V then return end
+if W.UserInputType==Enum.UserInputType.MouseButton1 then
+aj=true
+
+
+ak=C.Move:Connect(MouseMove)
+end
+end
+}
+
+ae.Activated:Connect(MouseMove)
+
+t.InputEnded:Connect(function(V)
+if not aj then return end
+if V.UserInputType==Enum.UserInputType.MouseButton1 then
+aj=false
+ak:Disconnect()
+end
+end)
+
+return ai
+end
+
+function R.ProgressSlider(aa,ab)
+ab=ab or{}
+ab.Progress=true
+return aa:Slider(ab)
+end
+
+function R.ProgressBar(aa,ab)
+ab=ab or{}
+ab.Progress=true
+ab.ReadOnly=true
+ab.MinValue=0
+ab.MaxValue=100
+ab.Format="% i%%"
+ab=aa:Slider(ab)
+
+function ab.SetPercentage(ac,ad)
+ab:SetValue(ad)
+end
+
+return ab
+end
+
+function R.Keybind(aa,ab)
+ab=ab or{}
+local ac=J.Keybind:Clone()
+local ad,
+ae,
+af=ac.ValueText,ab.Value,nil
+
+local function Callback(...)
+local ag=ab.Callback or p
+return ag(af,...)
+end
+
+function ab.SetValue(ag,ah)
+if not ah then return end
+ad.Text=ah.Name
+ab.Value=ah
+
+if ah==Enum.KeyCode.Backspace then
+ad.Text="Not set"
+return
+end
+end
+ab:SetValue(ae)
+
+ac.Activated:Connect(function()
+ad.Text="..."
+local ag=t.InputBegan:wait()
+if not t.WindowFocused then return end
+
+if ag.KeyCode.Name=="Unknown"then
+return ab:SetValue(ae)
+end
+
+wait(.1)
+ab:SetValue(ag.KeyCode)
+end)
+
+ab.Connection=t.InputBegan:Connect(function(ag,ah)
+if not ab.IgnoreGameProcessed and ah then return end
+
+if ag.KeyCode==ab.Value then
+return Callback(ag.KeyCode)
+end
+end)
+
+af=aa:NewInstance(ac,ab)
+return af
+end
+
+function R.Combo(aa,ab)
+ab=ab or{}
+ab.Open=false
+
+local ac=J.Combo:Clone()
+local ad,
+ae=ac.Toggle.ToggleButton,ac.ValueText
+ae.Text=ab.Placeholder or""
+
+local af,
+ag,
+
+ah=nil,aa:NewInstance(ac,ab),o:ConnectHover{
+Parent=ac
+}
+
+local function Callback(ai,...)
+local aj=ab.Callback or p
+ab:SetOpen(false)
+return aj(ag,ai,...)
+end
+
+function ab.SetValue(ai,aj,...)
+local ak=ab.Items or{}
+local V=ak[aj]
+ae.Text=aj
+ab.Selected=aj
+
+return Callback(V or aj)
+end
+
+function ab.SetOpen(ai,aj)
+local ak=ab.NoAnimation~=true
+o:HeaderAnimate(ac,ak,aj,ac,ad)
+ab.Open=aj
+
+if aj then
+af=o:Dropdown{
+Parent=ac,
+Items=ab.Items or{},
+Selected=ab.SetValue,
+Closed=function()
+if not ah.Hovering then
+ab:SetOpen(false)
+end
+end,
+}
+end
+
+return ai
+end
+
+local function ToggleOpen()
+if af then
+af:Close()
+end
+ab:SetOpen(not ab.Open)
+end
+
+
+ac.Activated:Connect(ToggleOpen)
+ad.Activated:Connect(ToggleOpen)
+o:ApplyAnimations(ac,"Buttons")
+
+if ab.Selected then
+ab:SetValue(ab.Selected)
+end
+
+return ag
+end
+
+return R
+end
+
+function o.Dropdown(aa,ab)
+local ac=ab.Parent
+if not ac then return end
+
+local ad=J.Selection:Clone()
+local ae=ad:FindFirstChildOfClass"UIStroke"
+
+local af,
+ag,
+ah=ae.Thickness*2,ac.AbsolutePosition,ac.AbsoluteSize
+
+ad.Parent=aa.ScreenGui
+ad.Position=UDim2.fromOffset(ag.X+af,ag.Y+ah.Y)
+
+local ai=aa:ConnectHover{
+Parent=ad,
+OnInput=function(ai,aj)
+if not aj.UserInputType.Name:find"Mouse"then return end
+
+if not ai then
+ab:Close()
+end
+end,
+}
+
+function ab.Close(aj)
+local ak=ab.Closed
+if ak then
+ak()
+end
+ai:Disconnect()
+return ad:Remove()
+end
+
+local function Selected(aj)
+local ak=aj.Text
+ab:Close()
+return ab:Selected(ak)
+end
+
+
+local aj=ad.Template
+aj.Visible=false
+
+for ak,L in next,ab.Items do
+local M=aj:Clone()
+M.Text=typeof(ak)~="number"and tostring(ak)or tostring(L)
+M.Parent=ad
+M.Visible=true
+
+aa:ApplyAnimations(M,"Tabs")
+M.Activated:Connect(function()
+return Selected(M)
+end)
+end
+
+
+
+
+local ak=ab.MaxSizeY or 200
+local L=math.clamp(ad.AbsoluteCanvasSize.Y,ah.Y,ak)
+ad.Size=UDim2.fromOffset(ah.X-af,L)
+
+return ab
+end
+
+function o.GetAnimation(aa,ab)
+return ab and aa.Animation or TweenInfo.new(0)
+end
+
+function o.Tween(aa,ab,ac,ad,ae)
+local af=ad or o:GetAnimation(not ae)
+local ag=s:Create(ab,
+af,
+ac
+)
+ag:Play()
+return ag
+end
+
+function o.ApplyAnimations(aa,ab,ac,ad)
+local ae=o.Animations
+local af=ae[ac]
+
+if not af then
+return o:Warn("No colors for",ac)
+end
+
+
+local ag={}
+for ah,ai in next,af do
+if typeof(ai)~="table"then continue end
+local aj=ad or ab
+local ak=function()
+o:Tween(aj,ai)
+end
+
+
+ag[ah]=ak
+ab[ah]:Connect(ak)
+end
+
+
+if ag.MouseLeave then
+ag.MouseLeave()
+end
+
+return ag
+end
+
+function o.HeaderAnimate(aa,ab,ac,ad,ae,af)
+local ag=af or ae.Toggle.ToggleButton
+
+
+o:Tween(ag,{
+Rotation=ad and 90 or 0,
+}):Play()
+
+
+local ah=ab:FindFirstChild"ChildContainer"
+if not ah then return end
+
+local ai,
+aj=ah.UIListLayout,ah:FindFirstChildOfClass"UIPadding"
+local ak=ai.AbsoluteContentSize
+
+if aj then
+local L,
+M=aj.PaddingTop.Offset,aj.PaddingBottom.Offset
+ak=Vector2.new(ak.X,ak.Y+L+M)
+end
+
+ah.AutomaticSize=Enum.AutomaticSize.None
+if not ad then
+ah.Size=UDim2.new(1,-10,0,ak.Y)
+end
+
+
+local L=o:Tween(ah,{
+Size=UDim2.new(1,-10,0,ad and ak.Y or 0),
+Visible=ad
+})
+L.Completed:Connect(function()
+if not ad then return end
+ah.AutomaticSize=Enum.AutomaticSize.Y
+ah.Size=UDim2.new(1,-10,0,0)
+end)
+end
+
+function o.ApplyDraggable(aa,ab,ac)
+o:GetAnimation(true)
+local ad,
+
+ae,
+af,
+ag,
+
+
+ah=ac or ab,false,nil,ab.Position,{
+Enum.UserInputType.MouseButton1,
+Enum.UserInputType.Touch
+}
+
+local function UserInputTypeAllowed(ai)
+return table.find(ah,ai)
+end
+
+
+ad.InputBegan:Connect(function(ai)
+if UserInputTypeAllowed(ai.UserInputType)then
+ae=true
+af=ai.Position
+ag=ab.Position
+end
+end)
+
+t.InputEnded:Connect(function(ai)
+if UserInputTypeAllowed(ai.UserInputType)then
+ae=false
+end
+end)
+
+
+local function Movement(ai)
+if not ae then return end
+
+local aj=ai.Position-af
+local ak=UDim2.new(
+ag.X.Scale,
+ag.X.Offset+aj.X,
+ag.Y.Scale,
+ag.Y.Offset+aj.Y
+)
+
+o:Tween(ab,{
+Position=ak
+}):Play()
+end
+
+
+t.TouchMoved:Connect(Movement)
+t.InputChanged:Connect(function(ai)
+if ai.UserInputType==Enum.UserInputType.MouseMovement then
+return Movement(ai)
+end
+end)
+end
+
+
+function o.ApplyResizable(aa,ab,ac,ad,ae)
+local af,
+ag
+
+ab=ab or Vector2.new(160,90)
+
+ad.MouseButton1Down:Connect(function()
+if af then return end
+ag=ac.AbsoluteSize
+af=Vector2.new(C.X,C.Y)
+end)
+
+t.InputChanged:Connect(function(ah)
+if not af or ah.UserInputType~=Enum.UserInputType.MouseMovement then
+return
+end
+
+local ai=Vector2.new(C.X,C.Y)
+local aj=ai-af
+
+local ak=ag+aj
+ak=UDim2.fromOffset(
+math.max(ab.X,ak.X),
+math.max(ab.Y,ak.Y)
+)
+
+ac.Size=ak
+if ae then
+ae.Size=ak
+end
+end)
+
+t.InputEnded:Connect(function(ah)
+if ah.UserInputType==Enum.UserInputType.MouseButton1 then
+af=nil
+end
+end)
+end
+
+function o.ConnectHover(aa,ab)
+local ac,
+ad=ab.Parent,{}
+ab.Hovering=false
+
+
+table.insert(ad,ac.MouseEnter:Connect(function()
+ab.Hovering=true
+end))
+table.insert(ad,ac.MouseLeave:Connect(function()
+ab.Hovering=false
+end))
+
+if ab.OnInput then
+table.insert(ad,t.InputBegan:Connect(function(ae)
+return ab.OnInput(ab.Hovering,ae)
+end))
+end
+
+function ab.Disconnect(ae)
+for af,ag in next,ad do
+ag:Disconnect()
+end
+end
+
+return ab
+end
+
+function o.ApplyWindowSelectEffect(aa,ab,ac)
+local ad,
+
+ae=ab:FindFirstChildOfClass"UIStroke",{
+Selected={
+BackgroundColor3=ac.BackgroundColor3
+},
+Deselected={
+BackgroundColor3=Color3.fromRGB(0,0,0)
+}
+}
+
+local function SetSelected(af)
+local ag,
+ah=o.Animations,af and"Selected"or"Deselected"
+o:GetAnimation(true)
+
+o:Tween(ac,ae[ah])
+o:Tween(ad,ag.WindowBorder[ah])
+ab.ZIndex=1
+if ah=="Selected"then
+ab.ZIndex=2
+end
+end
+
+aa:ConnectHover{
+Parent=ab,
+OnInput=function(af,ag)
+if ag.UserInputType.Name:find"Mouse"then
+SetSelected(af)
+end
+end,
+}
+end
+
+function o.SetWindowProps(aa,ab,ac)
+local ad={
+OldProperties={}
+}
+
+
+for ae in next,o.Windows do
+if table.find(ac,ae)then continue end
+
+local af={}
+ad.OldProperties[ae]=af
+
+for ag,ah in next,ab do
+af[ag]=ae[ag]
+ae[ag]=ah
+end
+end
+
+
+function ad.Revert(ae)
+for af in next,o.Windows do
+local ag=ad.OldProperties[af]
+if not ag then continue end
+
+for ah,ai in next,ag do
+af[ah]=ai
+end
+end
+end
+
+return ad
+end
+
+function o.CreateWindow(aa,ab)
+
+local ac=J.Window:Clone()
+ac.Parent=o.ScreenGui
+ac.Visible=true
+ab.Window=ac
+
+local ad=ac.Content
+local ae,
+
+
+af=ad.Body,ac.ResizeGrab
+af.Visible=ab.NoResize~=true
+
+local ag=ab.MinSize or Vector2.new(160,90)
+o:ApplyResizable(
+ag,
+ac,
+af,
+ab
+)
+
+
+local ah=ad.TitleBar
+ah.Visible=ab.NoTitleBar~=true
+
+local ai=ah.Left.Toggle
+ai.Visible=ab.NoCollapse~=true
+o:ApplyAnimations(ai.ToggleButton,"Tabs")
+
+local aj=ad.ToolBar
+aj.Visible=ab.TabsBar~=false
+
+if not ab.NoDrag then
+o:ApplyDraggable(ac)
+end
+
+
+local ak=ah.Close
+ak.Visible=ab.NoClose~=true
+
+function ab.Close(L)
+local M=ab.CloseCallback
+ab:SetVisible(false)
+if M then
+M(ab)
+end
+return ab
+end
+ak.Activated:Connect(ab.Close)
+
+function ab.GetHeaderSizeY(L)
+local M,
+P=aj.Visible and aj.AbsoluteSize.Y or 0,ah.Visible and ah.AbsoluteSize.Y or 0
+return M+P
+end
+
+function ab.UpdateBody(L)
+local M=L:GetHeaderSizeY()
+ae.Size=UDim2.new(1,0,1,-M)
+end
+ab:UpdateBody()
+
+
+ab.Open=true
+function ab.SetOpen(L,M,P)
+local Q,
+R=ac.AbsoluteSize,ah.AbsoluteSize
+
+L.Open=M
+
+
+o:HeaderAnimate(ah,true,M,ah,ai.ToggleButton)
+o:Tween(af,{
+TextTransparency=M and 0.6 or 1,
+Interactable=M
+},nil,P)
+o:Tween(ac,{
+Size=M and L.Size or UDim2.fromOffset(Q.X,R.Y)
+},nil,P)
+o:Tween(ae,{
+Visible=M
+},nil,P)
+return L
+end
+
+function ab.SetVisible(L,M)
+ac.Visible=M
+return L
+end
+
+function ab.SetTitle(L,M)
+ah.Left.Title.Text=tostring(M)
+return L
+end
+function ab.Remove(L)
+ac:Remove()
+return L
+end
+
+ai.ToggleButton.Activated:Connect(function()
+local L=not ab.Open
+ab.Open=L
+return ab:SetOpen(L)
+end)
+
+function ab.CreateTab(L,M)
+local P,
+Q=M.Name or"",aj.TabButton:Clone()
+Q.Name=P
+Q.Text=P
+Q.Visible=true
+Q.Parent=aj
+M.Button=Q
+
+local R,
+T=ab.AutoSize or"Y",ae.Template:Clone()
+T.AutomaticSize=Enum.AutomaticSize[R]
+T.Visible=M.Visible or false
+T.Name=P
+T.Parent=ae
+M.Content=T
+
+if R=="Y"then
+T.Size=UDim2.fromScale(1,0)
+elseif R=="X"then
+T.Size=UDim2.fromScale(0,1)
+end
+
+Q.Activated:Connect(function()
+ab:ShowTab(M)
+end)
+
+function M.GetContentSize(V)
+return T.AbsoluteSize
+end
+
+
+M=o:ContainerClass(T,M,ac)
+o:ApplyAnimations(Q,"Tabs")
+
+
+L:UpdateBody()
+if ab.AutoSize then
+T:GetPropertyChangedSignal"AbsoluteSize":Connect(function()
+local V=M:GetContentSize()
+L:SetSize(V)
+end)
+end
+
+return M
+end
+
+function ab.SetPosition(L,M)
+ac.Position=M
+return L
+end
+
+function ab.SetSize(L,M)
+local P=L:GetHeaderSizeY()
+
+if typeof(M)=="Vector2"then
+M=UDim2.fromOffset(M.X,M.Y)
+end
+
+
+local Q=UDim2.new(
+M.X.Scale,
+M.X.Offset,
+M.Y.Scale,
+M.Y.Offset+P
+)
+L.Size=Q
+ac.Size=Q
+
+return L
+end
+
+
+function ab.ShowTab(L,M)
+local P=M.Content
+
+
+if not P.Visible and not M.NoAnimation then
+P.Position=UDim2.fromOffset(0,5)
+end
+
+
+for Q,R in next,ae:GetChildren()do
+R.Visible=R==P
+end
+
+
+o:Tween(P,{
+Position=UDim2.fromOffset(0,0)
+})
+return L
+end
+
+function ab.Center(L)
+local M=ac.AbsoluteSize
+local P=UDim2.new(0.5,-M.X/2,0.5,-M.Y/2)
+L:SetPosition(P)
+return L
+end
+
+
+ab:SetTitle(ab.Title or"Depso UI")
+
+if not ab.Open then
+ab:SetOpen(ab.Open or true,true)
+end
+
+o.Windows[ac]=ab
+o:CheckStyles(ac,ab,ab.Colors)
+
+
+if not ab.NoSelectEffect then
+o:ApplyWindowSelectEffect(ac,ah)
+end
+
+return o:MergeMetatables(ab,ac)
+end
+
+function o.CreateModal(aa,ab)
+local ac=J.ModalEffect:Clone()
+ac.BackgroundTransparency=1
+ac.Parent=o.FullScreenGui
+ac.Visible=true
+
+o:Tween(ac,{
+BackgroundTransparency=0.6
+})
+
+
+ab=ab or{}
+ab.TabsBar=ab.TabsBar~=nil and ab.TabsBar or false
+ab.NoCollapse=true
+ab.NoResize=true
+ab.NoClose=true
+ab.NoSelectEffect=true
+ab.Parent=ac
+
+
+ab.AnchorPoint=Vector2.new(0.5,0.5)
+ab.Position=UDim2.fromScale(0.5,0.5)
+
+
+local ad=aa:CreateWindow(ab)
+ab=ad:CreateTab{
+Visible=true
+}
+
+
+local ae,
+
+
+
+
+af=o:SetWindowProps({Interactable=false},{ad.Window}),ad.Close
+function ab.Close(ag)
+local ah=o:Tween(ac,{
+BackgroundTransparency=1
+})
+ah.Completed:Connect(function()
+ac:Remove()
+end)
+
+ae:Revert()
+af()
+end
+
+return ab
+end
+
+local aa=(((gethui and((type(gethui)=="function")or(typeof and(typeof(gethui)=="function"))))or get_hidden_gui and((type(get_hidden_gui)=="function")or(typeof and(typeof(get_hidden_gui)=="function"))))and gethui()or w)
+o.ScreenGui=o:CreateInstance("ScreenGui",aa,{
+DisplayOrder=198,
+ResetOnSpawn=false,
+ZIndexBehavior=Enum.ZIndexBehavior.Sibling,
+Name=randomString(200)
+})
+o.FullScreenGui=o:CreateInstance("ScreenGui",aa,{
+DisplayOrder=199,
+ResetOnSpawn=false,
+ScreenInsets=Enum.ScreenInsets.None,
+ZIndexBehavior=Enum.ZIndexBehavior.Sibling,
+Name=randomString(200)
+})
+
+if(not is_sirhurt_closure)and(syn and syn.protect_gui)then
+syn.protect_gui(o)
+end
+
+return o
+end)()end
+
+local function randomString(aa)
+local ab,
+ac="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",""
+for ad=1,aa do
+local ae=math.random(1,#ab)
+ac=ac..string.sub(ab,ae,ae)
+end
+return ac
+end
+
+local aa,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ab={_RobloxGui=Instance.new"ScreenGui";_MainMenu=Instance.new"CanvasGroup";_UIStroke=Instance.new"UIStroke";_Container=Instance.new"ImageLabel";["_A UI Name"]=Instance.new"TextLabel";_UIGradient=Instance.new"UIGradient";_UIListLayout=Instance.new"UIListLayout";_UIStroke1=Instance.new"UIStroke";_UICorner=Instance.new"UICorner";["_B Status Text"]=Instance.new"TextLabel";["_B New Text"]=Instance.new"TextLabel";_UIPadding=Instance.new"UIPadding";_UIPadding1=Instance.new"UIPadding";_UICorner1=Instance.new"UICorner";_LoadingBar=Instance.new"Frame";_UICorner2=Instance.new"UICorner";_UIGradient1=Instance.new"UIGradient";},cloneref or function(ab)return ab end
+
+if not ab(game):IsLoaded()then
+local ac=Instance.new"Message"
+ac.Parent=COREGUI
+ac.Text='Dragonfruit is waiting for the game to load!'
+ab(game).Loaded:Wait()
+ac:Destroy()
+end
+
+local ac,
+
+ad,
+
+ae,af=getidentity or getthreadidentity or getthreadcontext,gethui and gethui()or ab(game:GetService"CoreGui"),pcall(function()return Instance.new("ScreenGui",ab(game:GetService"CoreGui"))end)
+
+
+if ae then
+if not af then else
+af:Destroy()
+end else
+
+ad=ab(ab(game:GetService"Players".LocalPlayer):FindFirstChildWhichIsA"PlayerGui")
+local ag,ah=pcall(function()return Instance.new("ScreenGui",ab(game:GetService"PlayerGui"))end)
+
+
+if ag then
+if not ah then else
+ah:Destroy()
+end else
+
+return
+end
+end
+local ag,
+ah=14958096162,14958096162
+
+local ai,
+aj=ab(game:GetService"MarketplaceService"):GetProductInfo(ag),{}
+if ah~=0 then
+aj=ab(game:GetService"MarketplaceService"):GetProductInfo(ah)
+end
+
+local ak,
+o=aj.Name or"Unsupported Game","rbxassetid://"..tostring(ai.IconImageAssetId)
+
+
+aa._RobloxGui.ZIndexBehavior=Enum.ZIndexBehavior.Sibling
+aa._RobloxGui.Name=randomString(200)
+aa._RobloxGui.Parent=ad
+
+aa._MainMenu.BackgroundColor3=Color3.fromRGB(47.0000009983778,45.00000111758709,50.000000819563866)
+aa._MainMenu.BackgroundTransparency=0.10000000149011612
+aa._MainMenu.BorderColor3=Color3.fromRGB(0,0,0)
+aa._MainMenu.BorderSizePixel=0
+aa._MainMenu.ClipsDescendants=true
+aa._MainMenu.Position=UDim2.new(0.5,-300,0.5,-200)
+aa._MainMenu.Size=UDim2.new(0,600,0,400)
+aa._MainMenu.Name=randomString(200)
+aa._MainMenu.Parent=aa._RobloxGui
+
+aa._UIStroke.ApplyStrokeMode=Enum.ApplyStrokeMode.Border
+aa._UIStroke.Color=Color3.fromRGB(63.000000044703484,63.000000044703484,63.000000044703484)
+aa._UIStroke.Parent=aa._MainMenu
+
+aa._UIPadding.PaddingBottom=UDim.new(0,20)
+aa._UIPadding.PaddingLeft=UDim.new(0,20)
+aa._UIPadding.PaddingRight=UDim.new(0,20)
+aa._UIPadding.PaddingTop=UDim.new(0,20)
+aa._UIPadding.Parent=aa._MainMenu
+
+aa._UICorner.CornerRadius=UDim.new(0,20)
+aa._UICorner.Parent=aa._MainMenu
+
+aa._LoadingBar.AnchorPoint=Vector2.new(0,1)
+aa._LoadingBar.AutomaticSize=Enum.AutomaticSize.Y
+aa._LoadingBar.BackgroundColor3=Color3.fromRGB(255,108.00000116229057,180.00000447034836)
+aa._LoadingBar.BorderColor3=Color3.fromRGB(0,0,0)
+aa._LoadingBar.BorderSizePixel=0
+aa._LoadingBar.Position=UDim2.new(0,0,1,0)
+aa._LoadingBar.Size=UDim2.new(0,0,0,10)
+aa._LoadingBar.ZIndex=2
+aa._LoadingBar.Name=randomString(200)
+aa._LoadingBar.Parent=aa._MainMenu
+
+aa._UICorner1.CornerRadius=UDim.new(1,0)
+aa._UICorner1.Parent=aa._LoadingBar
+
+aa._UIGradient.Color=ColorSequence.new{
+ColorSequenceKeypoint.new(0,Color3.fromRGB(255,255,255)),
+ColorSequenceKeypoint.new(1,Color3.fromRGB(204.00000303983688,252.00000017881393,222.00000196695328))
+}
+aa._UIGradient.Parent=aa._LoadingBar
+
+aa._Container.AnchorPoint=Vector2.new(0,0.5)
+aa._Container.AutomaticSize=Enum.AutomaticSize.Y
+aa._Container.BackgroundColor3=Color3.fromRGB(53.00000064074993,51.00000075995922,56.000000461936)
+aa._Container.BorderColor3=Color3.fromRGB(0,0,0)
+aa._Container.BorderSizePixel=0
+aa._Container.Position=UDim2.new(0,0,0.5,0)
+aa._Container.Size=UDim2.new(1,0,1,0)
+aa._Container.Name=randomString(200)
+aa._Container.ScaleType=Enum.ScaleType.Crop
+aa._Container.Image=o
+aa._Container.ImageTransparency=0.6
+aa._Container.Parent=aa._MainMenu
+
+aa._UICorner2.CornerRadius=UDim.new(0,10)
+aa._UICorner2.Parent=aa._Container
+
+aa._UIListLayout.VerticalAlignment=Enum.VerticalAlignment.Bottom
+aa._UIListLayout.Parent=aa._Container
+
+aa._UIPadding1.PaddingBottom=UDim.new(0,20)
+aa._UIPadding1.PaddingLeft=UDim.new(0,20)
+aa._UIPadding1.PaddingTop=UDim.new(0,20)
+aa._UIPadding1.Parent=aa._Container
+
+aa._UIStroke1.Color=Color3.fromRGB(67.00000360608101,67.00000360608101,67.00000360608101)
+aa._UIStroke1.Parent=aa._Container
+
+aa["_A UI Name"].Font=Enum.Font.BuilderSansBold
+aa["_A UI Name"].Text="Dragonfruit"
+aa["_A UI Name"].TextColor3=Color3.fromRGB(255,108.00000116229057,180.00000447034836)
+aa["_A UI Name"].TextSize=70
+aa["_A UI Name"].TextWrapped=true
+aa["_A UI Name"].TextXAlignment=Enum.TextXAlignment.Left
+aa["_A UI Name"].TextYAlignment=Enum.TextYAlignment.Bottom
+aa["_A UI Name"].AutomaticSize=Enum.AutomaticSize.Y
+aa["_A UI Name"].BackgroundColor3=Color3.fromRGB(255,255,255)
+aa["_A UI Name"].BackgroundTransparency=1
+aa["_A UI Name"].BorderColor3=Color3.fromRGB(0,0,0)
+aa["_A UI Name"].BorderSizePixel=0
+aa["_A UI Name"].Size=UDim2.new(1,0,0,50)
+aa["_A UI Name"].Name="B"
+aa["_A UI Name"].Parent=aa._Container
+
+aa._UIGradient1.Color=ColorSequence.new{
+ColorSequenceKeypoint.new(0,Color3.fromRGB(255,255,255)),
+ColorSequenceKeypoint.new(1,Color3.fromRGB(166.00000530481339,255,186.0000041127205))
+}
+aa._UIGradient1.Parent=aa["_A UI Name"]
+
+aa["_B Status Text"].Font=Enum.Font.BuilderSansMedium
+aa["_B Status Text"].Text="ui.status"
+aa["_B Status Text"].TextColor3=Color3.fromRGB(200.00000327825546,200.00000327825546,200.00000327825546)
+aa["_B Status Text"].TextSize=36
+aa["_B Status Text"].TextWrapped=true
+aa["_B Status Text"].TextXAlignment=Enum.TextXAlignment.Left
+aa["_B Status Text"].TextYAlignment=Enum.TextYAlignment.Bottom
+aa["_B Status Text"].AutomaticSize=Enum.AutomaticSize.Y
+aa["_B Status Text"].BackgroundColor3=Color3.fromRGB(255,255,255)
+aa["_B Status Text"].BackgroundTransparency=1
+aa["_B Status Text"].BorderColor3=Color3.fromRGB(0,0,0)
+aa["_B Status Text"].BorderSizePixel=0
+aa["_B Status Text"].Size=UDim2.new(1,0,0,36)
+aa["_B Status Text"].Name="A"
+aa["_B Status Text"].Parent=aa._Container
+
+aa["_B New Text"].Font=Enum.Font.BuilderSansMedium
+aa["_B New Text"].Text="ui.__newstatus"
+aa["_B New Text"].TextColor3=Color3.fromRGB(200.00000327825546,200.00000327825546,200.00000327825546)
+aa["_B New Text"].TextSize=36
+aa["_B New Text"].TextWrapped=true
+aa["_B New Text"].AutomaticSize=Enum.AutomaticSize.Y
+aa["_B New Text"].BackgroundColor3=Color3.fromRGB(255,255,255)
+aa["_B New Text"].BackgroundTransparency=1
+aa["_B New Text"].BorderColor3=Color3.fromRGB(0,0,0)
+aa["_B New Text"].TextXAlignment=Enum.TextXAlignment.Left
+aa["_B New Text"].TextYAlignment=Enum.TextYAlignment.Bottom
+aa["_B New Text"].BorderSizePixel=0
+aa["_B New Text"].TextTransparency=1
+aa["_B New Text"].Size=UDim2.new(1,0,1,0)
+aa["_B New Text"].Name=randomString(200)
+aa["_B New Text"].Parent=aa["_B Status Text"]
+
+local p,
+
+q,
+
+
+
+
+
+
+s,
+
+
+
+t=ab(game:GetService"TweenService"),TweenInfo.new(7,Enum.EasingStyle.Linear,Enum.EasingDirection.InOut,-1),{Rotation=180},aa._UIGradient
+
+t.Rotation=-180
+local u=p:Create(t,q,s)
+
+u:Play()
+
+
+local w,
+
+
+
+
+
+
+x,
+
+
+
+
+
+A=TweenInfo.new(0.35,Enum.EasingStyle.Cubic,Enum.EasingDirection.Out),TweenInfo.new(0.5,Enum.EasingStyle.Linear,Enum.EasingDirection.Out),TweenInfo.new(
+0.5,
+Enum.EasingStyle.Linear,
+Enum.EasingDirection.InOut
+)
+
+
+
+function nextStep(C,F,H)
+coroutine.wrap(function()
+local J=p:Create(aa._LoadingBar,w,{Size=UDim2.new(C/F,0,0,10)})
+J:Play()
+local K=p:Create(aa["_B Status Text"],A,{TextTransparency=1})
+K:Play()
+local L=p:Create(aa["_B New Text"],A,{TextTransparency=0})
+aa["_B New Text"].Text=H
+L:Play()
+task.wait(A.Time)
+aa["_B Status Text"].Text=H
+aa["_B New Text"].TextTransparency=1
+aa["_B Status Text"].TextTransparency=0
+end)()
+end
+
+function UNCtest()
+local C,F,H,
+L=0,0,0,0
+
+local function getGlobal(M)
+local P=getfenv(0)
+
+while P~=nil and M~=""do
+local Q,R=string.match(M,"^([^.]+)%.?(.*)$")
+P=P[Q]
+M=R
+end
+
+return P
+end
+
+local function test(M,P,Q)
+L=L+1
+
+task.spawn(function()
+
+if not Q then
+
+elseif not getGlobal(M)then
+F=F+1
+
+else local
+R, T=pcall(Q)
+
+if R then
+C=C+1
+
+else
+F=F+1
+
+end
+end
+
+local R={}
+
+for T,V in ipairs(P)do
+if getGlobal(V)==nil then
+table.insert(R,V)
+end
+end
+
+if#R>0 then
+H=H+1
+
+end
+
+L=L-1
+end)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("cloneref",{},function()
+local M=Instance.new"Part"
+local P=cloneref(M)
+assert(M~=P,"Clone should not be equal to original")
+P.Name="Test"
+assert(M.Name=="Test","Clone should have updated the original")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("checkcaller",{},function()
+assert(checkcaller(),"Main scope should return true")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("loadstring",{},function()
+local M=ab(ab(ab(ab(game:GetService"Players").LocalPlayer).Character).Animate)
+local P=getscriptbytecode(M)
+local Q=loadstring(P)
+assert(type(Q)~="function","Luau bytecode should not be loadable!")
+assert(assert(loadstring"return ... + 1")(1)==2,"Failed to do simple math")
+assert(type(select(2,loadstring"f"))=="string","Loadstring did not return anything for a compiler error")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if isfolder and makefolder and delfolder then
+if isfolder".tests"then
+delfolder".tests"
+end
+makefolder".tests"
+end
+
+test("readfile",{},function()
+writefile(".tests/readfile.txt","success")
+assert(readfile".tests/readfile.txt"=="success","Did not return the contents of the file")
+end)
+
+test("listfiles",{},function()
+makefolder".tests/listfiles"
+writefile(".tests/listfiles/test_1.txt","success")
+writefile(".tests/listfiles/test_2.txt","success")
+local M=listfiles".tests/listfiles"
+assert(#M==2,"Did not return the correct number of files")
+assert(isfile(M[1]),"Did not return a file path")
+assert(readfile(M[1])=="success","Did not return the correct files")
+makefolder".tests/listfiles_2"
+makefolder".tests/listfiles_2/test_1"
+makefolder".tests/listfiles_2/test_2"
+local P=listfiles".tests/listfiles_2"
+assert(#P==2,"Did not return the correct number of folders")
+assert(isfolder(P[1]),"Did not return a folder path")
+end)
+
+test("writefile",{},function()
+writefile(".tests/writefile.txt","success")
+assert(readfile".tests/writefile.txt"=="success","Did not write the file")
+local M=pcall(function()
+writefile(".tests/writefile","success")
+assert(isfile".tests/writefile.txt")
+end)
+if not M then
+return"This executor requires a file extension in writefile"
+end
+end)
+
+test("makefolder",{},function()
+makefolder".tests/makefolder"
+assert(isfolder".tests/makefolder","Did not create the folder")
+end)
+
+test("appendfile",{},function()
+writefile(".tests/appendfile.txt","su")
+appendfile(".tests/appendfile.txt","cce")
+appendfile(".tests/appendfile.txt","ss")
+assert(readfile".tests/appendfile.txt"=="success","Did not append the file")
+end)
+
+test("isfile",{},function()
+writefile(".tests/isfile.txt","success")
+assert(isfile".tests/isfile.txt"==true,"Did not return true for a file")
+assert(isfile".tests"==false,"Did not return false for a folder")
+assert(isfile".tests/doesnotexist.exe"==false,"Did not return false for a nonexistent path (got "..tostring(isfile".tests/doesnotexist.exe")..")")
+end)
+
+test("isfolder",{},function()
+assert(isfolder".tests"==true,"Did not return false for a folder")
+assert(isfolder".tests/doesnotexist.exe"==false,"Did not return false for a nonexistent path (got "..tostring(isfolder".tests/doesnotexist.exe")..")")
+end)
+
+test("delfolder",{},function()
+makefolder".tests/delfolder"
+delfolder".tests/delfolder"
+assert(isfolder".tests/delfolder"==false,"Failed to delete folder (isfolder = "..tostring(isfolder".tests/delfolder")..")")
+end)
+
+test("delfile",{},function()
+writefile(".tests/delfile.txt","Hello, world!")
+delfile".tests/delfile.txt"
+assert(isfile".tests/delfile.txt"==false,"Failed to delete file (isfile = "..tostring(isfile".tests/delfile.txt")..")")
+end)
+
+test("loadfile",{},function()
+writefile(".tests/loadfile.txt","return ... + 1")
+assert(assert(loadfile".tests/loadfile.txt")(1)==2,"Failed to load a file with arguments")
+writefile(".tests/loadfile.txt","f")
+local M,P=loadfile".tests/loadfile.txt"
+assert(P and not M,"Did not return an error message for a compiler error")
+end)
+
+test("dofile",{})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("gethui",{},function()
+assert(typeof(gethui())=="Instance","Did not return an Instance")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("hookmetamethod",{},function()
+local M=setmetatable({},{__index=newcclosure(function()return false end),__metatable="Locked!"})
+local P=hookmetamethod(M,"__index",function()return true end)
+assert(M.test==true,"Failed to hook a metamethod and change the return value")
+assert(P()==false,"Did not return the original function")
+end)
+
+test("getnamecallmethod",{},function()
+local M,
+P
+P=hookmetamethod(game,"__namecall",function(...)
+if not M then
+M=getnamecallmethod()
+end
+return P(...)
+end)
+ab(game:GetService"Lighting")
+assert(M=="GetService","Did not get the correct method (GetService)")
+end)
+
+test("isreadonly",{},function()
+local M={}
+table.freeze(M)
+assert(isreadonly(M),"Did not return true for a read-only table")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("messagebox",{})
+
+
+
+test("request",{"http.request","http_request"},function()
+local M=request{
+Url="https://httpbin.org/user-agent",
+Method="GET",
+}
+assert(type(M)=="table","Response must be a table")
+assert(M.StatusCode==200,"Did not return a 200 status code")
+local P=ab(game:GetService"HttpService"):JSONDecode(M.Body)
+assert(type(P)=="table"and type(P["user-agent"])=="string","Did not return a table with a user-agent key")
+return"User-Agent: "..P["user-agent"]
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("getgenv",{},function()
+getgenv().__TEST_GLOBAL=true
+assert(__TEST_GLOBAL,"Failed to set a global variable")
+getgenv().__TEST_GLOBAL=nil
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+test("getthreadidentity",{"getidentity","getthreadcontext"},function()
+assert(type(getthreadidentity())=="number","Did not return a number")
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+repeat task.wait()until L==0
+return F
+end
+
+local C=p:Create(aa._MainMenu,x,{GroupTransparency=0})
+
+C:Play()
+local F,
+H,
+L=p:Create(aa._UIStroke,x,{Transparency=0}),true,false
+F:Play()
+aa["_B Status Text"].Text="Step 1 • Checking UNC function compatibility..."
+local M=UNCtest()
+task.wait(1)
+nextStep(1,2,"Step 2 • Checking executor level...")
+if not ac then L=true elseif
+ac()<5 then
+H=false
+end
+task.wait(1)
+nextStep(2,2,"Complete")
+local P=p:Create(aa._MainMenu,x,{GroupTransparency=1})
+P:Play()
+local Q=p:Create(aa._UIStroke,x,{Transparency=1})
+Q:Play()
+task.wait(x.Time)
+aa._RobloxGui:Destroy()
+
+
+local R={}
+R.Version=""
+R.ImGui=n:CreateWindow{
+Title="Dragonfruit "..l.version..(l.premium and" Premium"or"").." - "..ak,
+Size=UDim2.new(0,504,0,476.4),
+Position=UDim2.new(0.5,0,0,70),
+NoClose=true
+}
+R.ImGui:Center()
+R.GAMESCRIPTS={[14958096162]=
+function(T,V,W,X,Y,Z,_)
+
+local al=false
+if({pcall(function()return getgenv end)})[2]then
+local am,an=pcall(function()getgenv().test=69 return{getgenv().test,test}end)
+if am and((an[1]==69)and an[2]==69)then
+al=true
+end
+end
+
+function SafeCall()
+return function(am)local an,ao=pcall(am)if not an then W("Dragonfruit - Error: "..tostring(ao))Y.ErrorHookSend("(INGE) "..tostring(ao))end end
+end
+
+V(string.format('<b>Dragonfruit</b> - %s [STATUS] run', tostring(X)))
+function randomStr()
+local am={}
+for an=32,127 do
+local ao=math.random(32,127)
+local ap=string.char(ao)
+am[an-32]=ap
+end
+local an=""
+for ao=1,100 do
+an=an..am[math.random(1,#am)]
+end
+return an
+end
+local am=cloneref or function(am)return am end
+
+
+am(game:GetService"TweenService")
+local an,
+ao,
+ap,
+aq,
+ar=am(game:GetService"Workspace"),am(game:GetService"Lighting"),gethui and gethui()or am(game:GetService"CoreGui"),am(game:GetService"Players"),am(game:GetService"UserInputService")
+local as=aq.LocalPlayer
+local at,
+au,
+av=as,am(game:GetService"RunService"),am(game:GetService"HttpService")
+am(game:GetService"SoundService")
+local aw,ax=pcall(function()ar:GetPlatform()end)
+if not aw then ax=nil end
+local ay=table.find({Enum.Platform.IOS,Enum.Platform.Android},ax)
+
+if ay then
+V"Dragonfruit on a mobile device may be unstable"
+end
+
+local az=T:CreateTab{
+Name="Evolve"
+}
+az:Separator{
+Text="Evolve"
+}
+T:ShowTab(az)
+function notify(aA,aB)
+task.defer(function()
+local aC,
+aD=aB and"🟢"or"🔴",_:CreateWindow{
+Title="Notification",
+TabsBar=false,
+AutoSize="Y",
+NoCollapse=true,
+NoResize=true,
+NoClose=false
+}
+
+local aE=aD:CreateTab{
+Visible=true
+}
+
+aE:Label{
+Text=aC.." "..aA,
+TextWrapped=true
+}
+
+aE:Button{
+Text="Okay",
+Callback=function()
+aD:Close()
+end,
+}
+
+task.wait(5)
+aD:Close()
+end)
+end
+function importantNotify(aA,aB)
+local aC=false
+coroutine.wrap(function()
+local aD=Instance.new("Sound",game:GetService"CoreGui")
+aD.SoundId="rbxassetid://15675059323"
+if not aD.IsLoaded then
+aD.Loaded:wait()
+end
+aD:Play()
+aC=true
+task.wait(aD.TimeLength)
+aD:Destroy()
+end)()
+local aD=os.clock()
+while not aC do
+if os.clock()-aD>=2 then
+W"notify sound timed out"
+break
+end
+task.wait()
+end
+
+local aE=aB or"Important Prompt"
+local aF=_:CreateModal{
+Title=aE,
+AutoSize="Y"
+}
+
+aF:Label{
+Text=aA,
+TextWrapped=true
+}
+
+aF:Separator()
+
+aF:Button{
+Text="Okay",
+Callback=function()
+aF:Close()
+end,
+}
+end
+if ay then
+importantNotify("On mobile, Dragonfruit may be unstable and some UI elements may be too large","Device Compatibility")
+end
+IYMouse=aq.LocalPlayer:GetMouse()
+
+Y.LogHookSend()
+local aA=am(an:FindFirstChild"Baseplate")
+local aB,
+aC=aA.Position,am(an:WaitForChild"Creatures")
+if(aA and aA:IsA"Part")and(aC and aC:IsA"Folder")then
+local aD=Instance.new("Part",an)
+aD.Anchored=true
+aD.Size=aA.Size
+aD.Position=aA.Position
+aD.Color=aA.Color
+aD.BottomSurface=Enum.SurfaceType.Smooth
+aD.TopSurface=Enum.SurfaceType.Smooth
+aA.Position=Vector3.new(5000,0,0)
+aA.Size=Vector3.new(1,1,1)
+aA.CanCollide=false
+aA.Transparency=1
+local aE=aA
+aE=aE:FindFirstChild"Texture"
+if aE then
+aE=aE:Clone()
+end
+aE.Parent=aD
+end
+local aD={}
+
+function aD.buildgrid_clear()
+local aE=an:FindFirstChild"BuildingGrids"
+if not(aE and aE:IsA"Folder")then
+return false
+end
+local aF=aq.LocalPlayer
+local aG=aE:FindFirstChild(aF.Name)
+if not(aG and aG:IsA"Model")then
+return false
+end
+local aH=aG:FindFirstChild"Remotes"
+if not(aH and aH:IsA"Folder")then
+return false
+end
+local aI=aH:FindFirstChild"Clear"
+if not(aI and aI:IsA"RemoteFunction")then
+return false
+end
+aI:InvokeServer()
+return true
+end
+function aD.despawn_creature(aE)
+local function forceDespawn()
+if aC:FindFirstChild(as.Name)then
+an:WaitForChild"BuildingGrids":WaitForChild(as.Name):WaitForChild"Remotes":WaitForChild"Spectate":InvokeServer()
+notify("Dragonfruit forcefully despawned your creature",true)
+return
+end
+end
+if aE then
+forceDespawn()
+return
+end
+local aF=aC:FindFirstChild(as.Name)
+if not aF then
+notify("Your creature is already despawned, there is no need to despawn.",true)
+end
+task.defer(function()
+firetouchinterest(getRoot(at.Character),aA,0)
+task.wait(0.1)
+firetouchinterest(getRoot(at.Character),aA,1)
+end)
+task.defer(function()
+firetouchinterest(getRoot(aF),aA,0)
+task.wait(0.1)
+firetouchinterest(getRoot(aF),aA,1)
+end)
+task.defer(function()
+local aG=aF.Body:GetChildren()
+local aH=aG[math.random(1,#aG)].HumanoidRootPart
+firetouchinterest(aH,aA,0)
+task.wait(0.1)
+firetouchinterest(aH,aA,1)
+end)
+task.wait(aq.LocalPlayer:GetNetworkPing()+0.05)
+if not aC:FindFirstChild(as.Name)then
+notify("Dragonfruit despawned your creature",true)
+return
+end
+task.defer(function()notify("Dragonfruit had to despawn your creature forcefully because your creature was not despawning.",true)end)
+forceDespawn()
+end
+function despawnCreature(aE)
+aD.despawn_creature(aE)
+end
+
+local aE,
+
+
+
+
+aF=function(aE)local aF=an.CurrentCamera:WorldToScreenPoint(aE.Position)return Vector2.new(aF.X,aF.Y)end,function()
+return Vector2.new(IYMouse.X,IYMouse.Y)
+end
+
+local aG=function()
+local aG,
+aH=nil,math.huge
+for aI,aJ in pairs(aq:GetPlayers())do
+if aJ~=aq.LocalPlayer and aJ.Character and aJ.Character:FindFirstChildOfClass"Humanoid"then
+for aK,aL in pairs(aJ.Character:GetChildren())do
+if string.find(aL.Name,"Torso")then
+local aM=(aE(aL)-aF()).Magnitude
+if aM<aH then
+aH=aM
+aG=aJ
+end
+end
+end
+end
+end
+return aG
+end
+SpecialPlayerCases={all=
+function(aH)return aq:GetPlayers()end,others=
+function(aH)
+local aI={}
+for aJ,aK in pairs(aq:GetPlayers())do
+if aK~=aH then
+table.insert(aI,aK)
+end
+end
+return aI
+end,me=
+function(aH)return{aH}end,
+["#(%d+)"]=function(aH,aI,aJ)
+local aK,
+aL,
+aM={},tonumber(aI[1]),{table.unpack(aJ)}
+for aN=1,aL do
+if#aM==0 then break end
+local aO=math.random(1,#aM)
+table.insert(aK,aM[aO])
+table.remove(aM,aO)
+end
+return aK
+end,random=
+function(aH,aI,aJ)
+local aK,
+aL=aq:GetPlayers(),aq.LocalPlayer
+table.remove(aK,table.find(aK,aL))
+return{aK[math.random(1,#aK)]}
+end,
+["%%(.+)"]=function(aH,aI)
+local aJ,
+aK={},aI[1]
+for aL,aM in pairs(aq:GetPlayers())do
+if aM.Team and string.sub(string.lower(aM.Team.Name),1,#aK)==string.lower(aK)then
+table.insert(aJ,aM)
+end
+end
+return aJ
+end,allies=
+function(aH)
+local aI,
+aJ={},aH.Team
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Team==aJ then
+table.insert(aI,aL)
+end
+end
+return aI
+end,enemies=
+function(aH)
+local aI,
+aJ={},aH.Team
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Team~=aJ then
+table.insert(aI,aL)
+end
+end
+return aI
+end,team=
+function(aH)
+local aI,
+aJ={},aH.Team
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Team==aJ then
+table.insert(aI,aL)
+end
+end
+return aI
+end,nonteam=
+function(aH)
+local aI,
+aJ={},aH.Team
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Team~=aJ then
+table.insert(aI,aL)
+end
+end
+return aI
+end,friends=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(aq:GetPlayers())do
+if aL:IsFriendsWith(aH.UserId)and aL~=aH then
+table.insert(aJ,aL)
+end
+end
+return aJ
+end,nonfriends=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(aq:GetPlayers())do
+if not aL:IsFriendsWith(aH.UserId)and aL~=aH then
+table.insert(aJ,aL)
+end
+end
+return aJ
+end,guests=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Guest then
+table.insert(aJ,aL)
+end
+end
+return aJ
+end,bacons=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Character:FindFirstChild'Pal Hair'or aL.Character:FindFirstChild'Kate Hair'then
+table.insert(aJ,aL)
+end
+end
+return aJ
+end,
+["age(%d+)"]=function(aH,aI)
+local aJ,
+aK={},tonumber(aI[1])
+if not aK==nil then return end
+for aL,aM in pairs(aq:GetPlayers())do
+if aM.AccountAge<=aK then
+table.insert(aJ,aM)
+end
+end
+return aJ
+end,nearest=
+function(aH,aI,aJ)
+local aK=aH.Character
+if not aK or not getRoot()then return end
+local aL,
+aM=math.huge,nil
+for aN,aO in pairs(aJ)do
+if aO~=aH and aO.Character then
+local aP=aO:DistanceFromCharacter(getRoot().Position)
+if aP<aL then
+aL=aP
+aM={aO}
+end
+end
+end
+return aM
+end,farthest=
+function(aH,aI,aJ)
+local aK=aH.Character
+if not aK or not getRoot()then return end
+local aL,
+aM=0,nil
+for aN,aO in pairs(aJ)do
+if aO~=aH and aO.Character then
+local aP=aO:DistanceFromCharacter(getRoot().Position)
+if aP>aL then
+aL=aP
+aM={aO}
+end
+end
+end
+return aM
+end,
+["group(%d+)"]=function(aH,aI)
+local aJ,
+aK={},tonumber(aI[1])
+for aL,aM in pairs(aq:GetPlayers())do
+if aM:IsInGroup(aK)then
+table.insert(aJ,aM)
+end
+end
+return aJ
+end,alive=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Character and aL.Character:FindFirstChildOfClass"Humanoid"and aL.Character:FindFirstChildOfClass"Humanoid".Health>0 then
+table.insert(aJ,aL)
+end
+end
+return aJ
+end,dead=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(aq:GetPlayers())do
+if(not aL.Character or not aL.Character:FindFirstChildOfClass"Humanoid")or aL.Character:FindFirstChildOfClass"Humanoid".Health<=0 then
+table.insert(aJ,aL)
+end
+end
+return aJ
+end,
+["rad(%d+)"]=function(aH,aI)
+local aJ,
+aK,
+aL={},tonumber(aI[1]),aH.Character
+if not aL or not getRoot()then return end
+for aM,aN in pairs(aq:GetPlayers())do
+if aN.Character and getRoot(aN.Character)then
+local aO=(getRoot(aN.Character).Position-getRoot().Position).magnitude
+if aO<=aK then table.insert(aJ,aN)end
+end
+end
+return aJ
+end,cursor=
+function(aH)
+local aI,
+aJ={},aG()
+if aJ~=nil then table.insert(aI,aJ)end
+return aI
+end,npcs=
+function(aH,aI)
+local aJ={}
+for aK,aL in pairs(an:GetDescendants())do
+if aL:IsA"Model"and getRoot(aL)and aL:FindFirstChildWhichIsA"Humanoid"and aq:GetPlayerFromCharacter(aL)==nil then
+local aM=Instance.new"Player"
+aM.Name=aL.Name.." - "..aL:FindFirstChildWhichIsA"Humanoid".DisplayName
+aM.Character=aL
+table.insert(aJ,aM)
+end
+end
+return aJ
+end,
+}
+function splitString(aH,aI)
+local aJ={}
+if aI==nil then aI=","end
+for aK in string.gmatch(aH,"[^"..aI.."]+")do
+table.insert(aJ,aK)
+end
+return aJ
+end
+function onlyIncludeInTable(aH,aI)
+local aJ,
+aK={},{}
+for aL,aM in pairs(aI)do aJ[aM.Name]=true end
+for aL,aM in pairs(aH)do if aJ[aM.Name]then table.insert(aK,aM)end end
+return aK
+end
+
+function removeTableMatches(aH,aI)
+local aJ,
+aK={},{}
+for aL,aM in pairs(aI)do aJ[aM.Name]=true end
+for aL,aM in pairs(aH)do if not aJ[aM.Name]then table.insert(aK,aM)end end
+return aK
+end
+function toTokens(aH)
+local aI={}
+for aJ,aK in string.gmatch(aH,"([+-])([^+-]+)")do
+table.insert(aI,{Operator=aJ,Name=aK})
+end
+return aI
+end
+function getPlayersByName(aH)
+local aI,aJ,aK=string.lower(aH),#aH,{}
+for aL,aM in pairs(aq:GetPlayers())do
+if aI:sub(0,1)=='@'then
+if string.sub(string.lower(aM.Name),1,aJ-1)==aI:sub(2)then
+table.insert(aK,aM)
+end
+else
+if string.sub(string.lower(aM.Name),1,aJ)==aI or string.sub(string.lower(aM.DisplayName),1,aJ)==aI then
+table.insert(aK,aM)
+end
+end
+end
+return aK
+end
+function getPlayer(aH,aI)
+if aH==nil then return{aI.Name}end
+local aJ
+if aH=="everyone"then
+for aK,aL in pairs(aq:GetPlayers())do
+aJ=aJ..","..aL.Name
+end
+elseif aH=="others"then
+for aK,aL in pairs(aq:GetPlayers())do
+if aL.Name~=aI.Name then
+aJ=aJ..","..aL.Name
+end
+end
+else
+aJ=aH
+end
+aJ=splitString(aJ,",")
+
+local aK={}
+
+for aL,aM in pairs(aJ)do
+if string.sub(aM,1,1)~="+"and string.sub(aM,1,1)~="-"then aM="+"..aM end
+local aN,
+aO=toTokens(aM),aq:GetPlayers()
+
+for aP,aQ in pairs(aN)do
+if aQ.Operator=="+"then
+local aR,
+aS=aQ.Name,false
+for aT,aU in pairs(SpecialPlayerCases)do
+local aV={string.match(aR,"^"..aT.."$")}
+if#aV>0 then
+aS=true
+aO=onlyIncludeInTable(aO,aU(aI,aV,aO))
+end
+end
+if not aS then
+aO=onlyIncludeInTable(aO,getPlayersByName(aR))
+end
+else
+local aR,
+aS=aQ.Name,false
+for aT,aU in pairs(SpecialPlayerCases)do
+local aV={string.match(aR,"^"..aT.."$")}
+if#aV>0 then
+aS=true
+aO=removeTableMatches(aO,aU(aI,aV,aO))
+end
+end
+if not aS then
+aO=removeTableMatches(aO,getPlayersByName(aR))
+end
+end
+end
+
+for aP,aQ in pairs(aO)do table.insert(aK,aQ)end
+end
+
+local aL={}
+for aM,aN in pairs(aK)do table.insert(aL,aN.Name)end
+
+return aL
+end
+function getRoot(aH)
+local aI=as.Character
+if aH then aI=aH end
+local aJ=aI:FindFirstChild'HumanoidRootPart'or aI:FindFirstChild'Torso'or aI:FindFirstChild'UpperTorso'
+return aJ
+end
+local aH,
+aI,
+aJ=nil,0.3,nil
+function ESP(aK)
+task.spawn(function()
+for aL,aM in pairs(ap:GetChildren())do
+if aM.Name==aK.Name..'_ESP'then
+aM:Destroy()
+end
+end
+wait()
+if aK.Character and aK.Name~=aq.LocalPlayer.Name and not ap:FindFirstChild(aK.Name..'_ESP')then
+local aL=Instance.new"Folder"
+aL.Name=aK.Name..'_ESP'
+aL.Parent=ap
+repeat wait(1)until aK.Character and getRoot(aK.Character)and aK.Character:FindFirstChildOfClass"Humanoid"
+for aM,aN in pairs(aK.Character:GetChildren())do
+if(aN:IsA"BasePart")then
+local aO=Instance.new"BoxHandleAdornment"
+aO.Name=aK.Name
+aO.Parent=aL
+aO.Adornee=aN
+aO.AlwaysOnTop=true
+aO.ZIndex=10
+aO.Size=aN.Size
+aO.Transparency=aI
+aO.Color=aK.TeamColor
+end
+end
+if aK.Character and aK.Character:FindFirstChild'Head'then
+local aM,
+aN=Instance.new"BillboardGui",Instance.new"TextLabel"
+aM.Adornee=aK.Character.Head
+aM.Name=aK.Name
+aM.Parent=aL
+aM.Size=UDim2.new(0,100,0,150)
+aM.StudsOffset=Vector3.new(0,1,0)
+aM.AlwaysOnTop=true
+aN.Parent=aM
+aN.BackgroundTransparency=1
+aN.Position=UDim2.new(0,0,0,-50)
+aN.Size=UDim2.new(0,100,0,100)
+aN.Font=Enum.Font.SourceSansSemibold
+aN.TextSize=20
+aN.TextColor3=Color3.new(1,1,1)
+aN.TextStrokeTransparency=0
+aN.TextYAlignment=Enum.TextYAlignment.Bottom
+aN.Text='Name: '..aK.Name
+aN.ZIndex=10
+local aO,
+aP,
+aQ
+aQ=aK.CharacterAdded:Connect(function()
+if aJ then
+aO:Disconnect()
+aP:Disconnect()
+aL:Destroy()
+repeat wait(1)until getRoot(aK.Character)and aK.Character:FindFirstChildOfClass"Humanoid"
+ESP(aK)
+aQ:Disconnect()
+else
+aP:Disconnect()
+aQ:Disconnect()
+end
+end)
+aP=aK:GetPropertyChangedSignal"TeamColor":Connect(function()
+if aJ then
+aO:Disconnect()
+aQ:Disconnect()
+aL:Destroy()
+repeat wait(1)until getRoot(aK.Character)and aK.Character:FindFirstChildOfClass"Humanoid"
+ESP(aK)
+aP:Disconnect()
+else
+aP:Disconnect()
+end
+end)
+local function espLoop()
+if ap:FindFirstChild(aK.Name..'_ESP')then
+if aK.Character and getRoot(aK.Character)and aK.Character:FindFirstChildOfClass"Humanoid"and aq.LocalPlayer.Character and getRoot(aq.LocalPlayer.Character)and aq.LocalPlayer.Character:FindFirstChildOfClass"Humanoid"then
+local aR=math.floor((getRoot(aq.LocalPlayer.Character).Position-getRoot(aK.Character).Position).magnitude)
+aN.Text='Name: '..aK.Name..' | Display Name: '..aK.DisplayName..' | Health: '..round(aK.Character:FindFirstChildOfClass'Humanoid'.Health,1)..' | Studs: '..aR
+end
+else
+aP:Disconnect()
+aQ:Disconnect()
+aO:Disconnect()
+end
+end
+aO=au.RenderStepped:Connect(espLoop)
+end
+end
+end)
+end
+
+
+Clip=true
+FLYING=false
+QEfly=true
+iyflyspeed=1
+vehicleflyspeed=1
+loopgotowait=false
+velocityHandlerName=randomStr()
+gyroHandlerName=randomStr()
+
+function NOFLY()
+FLYING=false
+if flyKeyDown or flyKeyUp then flyKeyDown:Disconnect()flyKeyUp:Disconnect()end
+if aq.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'then
+aq.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'.PlatformStand=false
+end
+pcall(function()an.CurrentCamera.CameraType=Enum.CameraType.Custom end)
+end
+function sFLY(aK)
+repeat wait()until aq.LocalPlayer and aq.LocalPlayer.Character and getRoot(aq.LocalPlayer.Character)and aq.LocalPlayer.Character:FindFirstChildOfClass"Humanoid"
+repeat wait()until IYMouse
+if flyKeyDown or flyKeyUp then flyKeyDown:Disconnect()flyKeyUp:Disconnect()end
+
+local aL,
+aM,
+aN,
+aO=getRoot(aq.LocalPlayer.Character),{F=0,B=0,L=0,R=0,Q=0,E=0},{F=0,B=0,L=0,R=0,Q=0,E=0},0
+
+local function FLY()
+FLYING=true
+local aP,
+aQ=Instance.new'BodyGyro',Instance.new'BodyVelocity'
+aP.P=9e4
+aP.Parent=aL
+aQ.Parent=aL
+aP.maxTorque=Vector3.new(9e9,9e9,9e9)
+aP.cframe=aL.CFrame
+aQ.velocity=Vector3.new(0,0,0)
+aQ.maxForce=Vector3.new(9e9,9e9,9e9)
+task.spawn(function()
+repeat wait()
+if not aK and aq.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'then
+aq.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'.PlatformStand=true
+end
+if aM.L+aM.R~=0 or aM.F+aM.B~=0 or aM.Q+aM.E~=0 then
+aO=50
+elseif not(aM.L+aM.R~=0 or aM.F+aM.B~=0 or aM.Q+aM.E~=0)and aO~=0 then
+aO=0
+end
+if(aM.L+aM.R)~=0 or(aM.F+aM.B)~=0 or(aM.Q+aM.E)~=0 then
+aQ.velocity=((an.CurrentCamera.CoordinateFrame.lookVector*(aM.F+aM.B))+((an.CurrentCamera.CoordinateFrame*CFrame.new(aM.L+aM.R,(aM.F+aM.B+aM.Q+aM.E)*0.2,0).p)-an.CurrentCamera.CoordinateFrame.p))*aO
+aN={F=aM.F,B=aM.B,L=aM.L,R=aM.R}
+elseif(aM.L+aM.R)==0 and(aM.F+aM.B)==0 and(aM.Q+aM.E)==0 and aO~=0 then
+aQ.velocity=((an.CurrentCamera.CoordinateFrame.lookVector*(aN.F+aN.B))+((an.CurrentCamera.CoordinateFrame*CFrame.new(aN.L+aN.R,(aN.F+aN.B+aM.Q+aM.E)*0.2,0).p)-an.CurrentCamera.CoordinateFrame.p))*aO
+else
+aQ.velocity=Vector3.new(0,0,0)
+end
+aP.cframe=an.CurrentCamera.CoordinateFrame
+until not FLYING
+aM={F=0,B=0,L=0,R=0,Q=0,E=0}
+aN={F=0,B=0,L=0,R=0,Q=0,E=0}
+aO=0
+aP:Destroy()
+aQ:Destroy()
+if aq.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'then
+aq.LocalPlayer.Character:FindFirstChildOfClass'Humanoid'.PlatformStand=false
+end
+end)
+end
+flyKeyDown=IYMouse.KeyDown:Connect(function(aP)
+if aP:lower()=='w'then
+aM.F=(aK and vehicleflyspeed or iyflyspeed)
+elseif aP:lower()=='s'then
+aM.B=-(aK and vehicleflyspeed or iyflyspeed)
+elseif aP:lower()=='a'then
+aM.L=-(aK and vehicleflyspeed or iyflyspeed)
+elseif aP:lower()=='d'then
+aM.R=(aK and vehicleflyspeed or iyflyspeed)
+elseif QEfly and aP:lower()=='e'then
+aM.Q=(aK and vehicleflyspeed or iyflyspeed)*2
+elseif QEfly and aP:lower()=='q'then
+aM.E=-(aK and vehicleflyspeed or iyflyspeed)*2
+end
+pcall(function()an.CurrentCamera.CameraType=Enum.CameraType.Track end)
+end)
+flyKeyUp=IYMouse.KeyUp:Connect(function(aP)
+if aP:lower()=='w'then
+aM.F=0
+elseif aP:lower()=='s'then
+aM.B=0
+elseif aP:lower()=='a'then
+aM.L=0
+elseif aP:lower()=='d'then
+aM.R=0
+elseif aP:lower()=='e'then
+aM.Q=0
+elseif aP:lower()=='q'then
+aM.E=0
+end
+end)
+FLY()
+end
+
+local aK=function()
+pcall(function()
+FLYING=false
+local aK=getRoot(at.Character)
+aK:FindFirstChild(velocityHandlerName):Destroy()
+aK:FindFirstChild(gyroHandlerName):Destroy()
+at.Character:FindFirstChildWhichIsA"Humanoid".PlatformStand=false
+mfly1:Disconnect()
+mfly2:Disconnect()
+end)
+end
+
+local aL=function(aL)
+aK()
+FLYING=true
+
+local aM,
+aN,
+aO,
+aP,
+aQ,
+
+aR,
+aS=getRoot(),an.CurrentCamera,Vector3.new(),Vector3.new(0,0,0),Vector3.new(9e9,9e9,9e9),require(at.PlayerScripts:WaitForChild"PlayerModule":WaitForChild"ControlModule"),Instance.new"BodyVelocity"
+aS.Name=velocityHandlerName
+aS.Parent=aM
+aS.MaxForce=aP
+aS.Velocity=aP
+
+local aT=Instance.new"BodyGyro"
+aT.Name=gyroHandlerName
+aT.Parent=aM
+aT.MaxTorque=aQ
+aT.P=1000
+aT.D=50
+
+mfly1=at.CharacterAdded:Connect(function()
+local aU=Instance.new"BodyVelocity"
+aU.Name=velocityHandlerName
+aU.Parent=aM
+aU.MaxForce=aP
+aU.Velocity=aP
+
+local aV=Instance.new"BodyGyro"
+aV.Name=gyroHandlerName
+aV.Parent=aM
+aV.MaxTorque=aQ
+aV.P=1000
+aV.D=50
+end)
+
+mfly2=au.RenderStepped:Connect(function()
+aM=getRoot()
+aN=an.CurrentCamera
+if at.Character:FindFirstChildWhichIsA"Humanoid"and aM and aM:FindFirstChild(velocityHandlerName)and aM:FindFirstChild(gyroHandlerName)then
+local aU,
+aV,
+aW=at.Character:FindFirstChildWhichIsA"Humanoid",aM:FindFirstChild(velocityHandlerName),aM:FindFirstChild(gyroHandlerName)
+
+aV.MaxForce=aQ
+aW.MaxTorque=aQ
+if not aL then aU.PlatformStand=true end
+aW.CFrame=aN.CoordinateFrame
+aV.Velocity=aO
+
+local aX=aR:GetMoveVector()
+if aX.X>0 then
+aV.Velocity=aV.Velocity+aN.CFrame.RightVector*(aX.X*((aL and vehicleflyspeed or iyflyspeed)*50))
+end
+if aX.X<0 then
+aV.Velocity=aV.Velocity+aN.CFrame.RightVector*(aX.X*((aL and vehicleflyspeed or iyflyspeed)*50))
+end
+if aX.Z>0 then
+aV.Velocity=aV.Velocity-aN.CFrame.LookVector*(aX.Z*((aL and vehicleflyspeed or iyflyspeed)*50))
+end
+if aX.Z<0 then
+aV.Velocity=aV.Velocity-aN.CFrame.LookVector*(aX.Z*((aL and vehicleflyspeed or iyflyspeed)*50))
+end
+end
+end)
+end
+do
+coroutine.wrap(function()
+if not hookmetamethod then
+return notify('Your exploit does not support this command (missing hookmetamethod)',false)
+end
+local aM,
+aN,
+aO=aq.LocalPlayer,nil,nil
+aN=hookmetamethod(game,"__index",function(aP,aQ)
+if aP==aM and aQ:lower()=="kick"then
+return error("Expected ':' not '.' calling member function Kick",2)
+end
+return aN(aP,aQ)
+end)
+aO=hookmetamethod(game,"__namecall",function(aP,...)
+if aP==aM and getnamecallmethod():lower()=="kick"then
+return
+end
+return aO(aP,...)
+end)
+
+notify('Client anti kick is now active (only effective on localscript kick)',true)
+end)()
+local aM,
+aN,
+aO,
+
+aP=false,false,am(workspace.Spectators),az:CollapsingHeader{
+Title="Anti Moderation"
+}
+local aQ,
+
+
+
+
+
+
+
+
+aR=aP:Checkbox{Label="Moderator in Server",Value=false,Callback=function(aQ,aR)if aR~=aN then aQ:SetTicked(aN)end end},aP:Checkbox{
+Label="Moderator in Spectate",
+Value=false,
+Callback=function(aR,aS)
+if aS~=aM then
+aR:SetTicked(aM)
+end
+end
+}
+aP:Separator{
+Text=nil
+}
+local aS=aP:Checkbox{
+Label="Instantly despawn on moderator join",
+Value=true
+}
+aP:Label{
+Text="OR"
+}
+local aT=aP:Checkbox{
+Label="Instantly despawn on moderator spectate",
+Value=false
+}
+aP:Separator{
+Text=nil
+}
+aP:Checkbox{
+Label="Disable moderation checks [Not recommended]",
+Value=false,
+Callback=function(aU,aV)
+moderator_check_enabled=not aV
+end
+}
+
+local aU,
+
+
+
+aV=az:CollapsingHeader{Title="Disable Vision Limitations"},{ClanAtlas=812075}
+
+function updateModerators()
+aV={ClanAtlas=812075}
+local aW,
+aX=16879177,94138722
+local aY="https://groups.roblox.com/v1/groups/"..aW.."/roles/"..aX.."/users?limit=100"
+function getMembers(aZ)
+V"Moderator Detection\nGetting Evolve group members..."
+local a_,a0=pcall(function()
+return game:HttpGet(aZ)
+end)
+
+if a_ then
+local a1=av:JSONDecode(a0)
+if a1 and a1.data then
+for a2,a3 in ipairs(a1.data)do
+aV[a3.username]=a3.userId
+
+end
+if a1.nextPageCursor then
+getMembers(aZ.."&cursor="..a1.nextPageCursor)
+end
+else
+V"No members found for this role."
+end
+else
+W("Failed to get members: "..tostring(a0))
+end
+end
+getMembers(aY)
+aW=16879177
+aX=108264656
+aY="https://groups.roblox.com/v1/groups/"..aW.."/roles/"..aX.."/users?limit=100"
+function getMembers(aZ)
+V"Moderator Detection\nGetting Evolve group members..."
+local a_,a0=pcall(function()
+return game:HttpGet(aZ)
+end)
+
+if a_ then
+local a1=av:JSONDecode(a0)
+if a1 and a1.data then
+for a2,a3 in ipairs(a1.data)do
+aV[a3.username]=a3.userId
+
+end
+if a1.nextPageCursor then
+getMembers(aZ.."&cursor="..a1.nextPageCursor)
+end
+else
+V"No members found for this role."
+end
+else
+W("Failed to get members: "..tostring(a0))
+end
+end
+getMembers(aY)
+end
+updateModerators()
+local aW=true
+function updateIfHadModerator()
+
+aQ:SetTicked(aN)
+aR:SetTicked(aM)
+end
+function checkForModerators()
+updateModerators()
+task.defer(function()
+for aX,aY in pairs(aq:GetChildren())do
+if(aV[aY.Name]==aY.UserId)then
+V("New moderator added to the server: @"..aY.Name.."("..tostring(aY.UserId)..")")
+if aN then return end
+
+
+
+
+
+
+
+
+
+aN=true
+updateIfHadModerator()
+if aS:GetValue()then
+importantNotify("An Evolve moderator was detected in the server, to avoid getting banned, stay despawned until Dragonfruit notifies you that all moderators have left the server. Dragonfruit has automatically despawned your creature for you.","Moderator Detection")
+
+task.spawn(function()despawnCreature(true)end)
+break
+end
+importantNotify("An Evolve moderator was detected in the server, Dragonfruit recommends you to enable the Instantly Despawn on Moderator Join option for the most safest experience in exploiting possible.","Moderator Detection")
+break
+
+end
+end
+end)
+end
+function returnIfModeratorTrueDetectionOnEvolve()
+updateModerators()
+for aX,aY in pairs(aq:GetChildren())do
+if aV[aY.Name]==aY.UserId then
+return true
+end
+end
+return false
+end
+function checkSpectatorsForModerators()
+task.defer(function()
+
+updateIfHadModerator()
+local aX=false
+for aY,aZ in pairs(aO:GetChildren())do
+if(aV[aZ.Name]==aq[aZ.Name].UserId)then
+V("Moderator is spectating: @"..aZ.Name.."("..tostring(aZ.UserId)..")")
+aX=true
+if(not aM)and aT:GetValue()then
+aM=true
+importantNotify("An Evolve moderator is spectating. Dragonfruit has automatically despawned your creature for you.","Moderator Detection")
+
+task.spawn(function()despawnCreature(true)end)
+updateIfHadModerator()
+break
+end
+importantNotify("An Evolve moderator is spectating.","Moderator Detection")
+updateIfHadModerator()
+break
+end
+end
+if(not aX)and aM then
+aM=false
+importantNotify("No Evolve moderators are spectating. Feel free to spawn.","Moderator Detection")
+end
+end)
+end
+checkForModerators()
+aq.PlayerAdded:Connect(function()
+if not aW then return end
+checkForModerators()
+updateIfHadModerator()
+end)
+aq.PlayerRemoving:Connect(function()
+if not aW then return end
+if(returnIfModeratorTrueDetectionOnEvolve()==false)and(aN==true)then
+importantNotify("Dragonfruit has detected all moderators to have left the server. You may feel free to spawn in and use Dragonfruit.","Moderator Detection")
+updateIfHadModerator()
+aN=false
+end
+end)
+aO.ChildAdded:Connect(function()
+checkSpectatorsForModerators()
+end)
+aO.ChildRemoved:Connect(function()
+checkSpectatorsForModerators()
+end)
+aU:Checkbox{
+Label="Enabled",
+Value=false,
+Callback=function(aX,aY)
+if aY then
+ivsenabled=true
+orcamzoom=aq.LocalPlayer.CameraMaxZoomDistance
+local aZ,
+a_=an:FindFirstChild"FX",nil
+if aZ then a_=aZ:FindFirstChild"VisionRange"end
+if a_ then
+local a0=a_:FindFirstChild"One"
+if a0 then orone=a_.Transparency end
+local a1=a_:FindFirstChild"Two"
+if a1 then ortwo=a_.Transparency end
+orvivi=a_.Transparency
+end
+while(task.wait(0))and ivsenabled do
+task.spawn(function()
+aq.LocalPlayer.CameraMaxZoomDistance=100000
+local a0,
+a1=an:FindFirstChild"FX",nil
+if a0 then a1=a0:FindFirstChild"VisionRange"end
+if a1 then
+a1.Transparency=1
+local a2=a1:FindFirstChild"One"
+if a2 then a2.Transparency=1 end
+local a3=a1:FindFirstChild"Two"
+if a3 then a3.Transparency=1 end
+local a4=ao
+local a5,
+a6=a4:FindFirstChild"Atmosphere",a4:FindFirstChild"DepthOfField"
+local a7=a5
+if a7~=nil then
+a7=a7:IsA"Atmosphere"
+end
+local a8=a7
+if a8 then
+local a9=a6
+if a9~=nil then
+a9=a9:IsA"DepthOfFieldEffect"
+end
+a8=a9
+end
+if a8 then
+a5.Density=0
+a6.Enabled=false
+end
+end
+end)
+end
+return
+end
+ivsenabled=false
+task.wait(0.01)
+task.spawn(function()
+aq.LocalPlayer.CameraMaxZoomDistance=orcamzoom
+local aZ,
+a_=an:FindFirstChild"FX",nil
+if aZ then a_=aZ:FindFirstChild"VisionRange"end
+if a_ then
+a_.Transparency=orvivi
+local a0=a_:FindFirstChild"One"
+if a0 then a0.Transparency=orone end
+local a1=a_:FindFirstChild"Two"
+if a1 then a1.Transparency=ortwo end
+local a2=ao
+local a3,
+a4=a2:FindFirstChild"Atmosphere",a2:FindFirstChild"DepthOfField"
+local a5=a3
+if a5~=nil then
+a5=a5:IsA"Atmosphere"
+end
+local a6=a5
+if a6 then
+local a7=a4
+if a7~=nil then
+a7=a7:IsA"DepthOfFieldEffect"
+end
+a6=a7
+end
+if a6 then
+a3.Density=0
+a4.Enabled=false
+end
+end
+end)
+end
+}
+
+local aX=az:CollapsingHeader{
+Title="Instant Despawn"
+}
+aX:Button{
+Text="Despawn without losing age (Forced Despawn)",
+Callback=function()
+despawnCreature(true)
+end,
+}
+aX:Button{
+Text="Despawn",
+Callback=function()
+despawnCreature(false)
+end,
+}
+
+
+local aY={}
+aY.Enabled=0
+local aZ,
+
+a_=nil,az:CollapsingHeader{
+Title="Phase Touch"
+}
+local a0,
+
+
+
+
+
+
+
+
+
+
+
+a1,
+
+
+
+
+
+
+
+
+
+
+
+a2,
+
+
+
+
+
+
+
+
+
+
+
+a3,
+
+
+
+
+
+
+
+
+
+
+
+a4,
+
+
+
+
+
+
+
+
+
+
+
+a5,
+
+
+
+
+
+
+
+
+
+
+
+a6,
+
+
+
+
+
+
+
+
+
+
+
+a7,
+
+
+
+
+
+
+
+
+
+
+
+a8,
+
+
+
+
+
+
+
+
+
+
+
+a9,
+
+
+
+
+
+
+
+
+
+
+
+ba,
+
+
+
+
+
+
+
+
+
+
+
+bb,
+
+
+
+
+
+
+
+
+
+
+
+bc=a_:Checkbox{Label="Mender Enabled",Value=true,Callback=function(a0,a1)if not aZ then return end local a2=aZ:GetValue()if a2 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Parasite Enabled",Value=true,Callback=function(a1,a2)if not aZ then return end local a3=aZ:GetValue()if a3 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Jaws Enabled",Value=true,Callback=function(a2,a3)if not aZ then return end local a4=aZ:GetValue()if a4 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Spike Enabled",Value=true,Callback=function(a3,a4)if not aZ then return end local a5=aZ:GetValue()if a5 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Feeder Enabled",Value=true,Callback=function(a4,a5)if not aZ then return end local a6=aZ:GetValue()if a6 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Drill Enabled",Value=true,Callback=function(a5,a6)if not aZ then return end local a7=aZ:GetValue()if a7 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Mace Enabled",Value=true,Callback=function(a6,a7)if not aZ then return end local a8=aZ:GetValue()if a8 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Stinger Enabled",Value=true,Callback=function(a7,a8)if not aZ then return end local a9=aZ:GetValue()if a9 then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Mandible Enabled",Value=true,Callback=function(a8,a9)if not aZ then return end local ba=aZ:GetValue()if ba then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Lance Enabled",Value=true,Callback=function(a9,ba)if not aZ then return end local bb=aZ:GetValue()if bb then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Attack Individually",Value=false,Callback=function(ba,bb)if not aZ then return end local bc=aZ:GetValue()if bc then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:Checkbox{Label="Use all attacking parts at once",Value=false,Callback=function(bb,bc)if not aZ then return end local bd=aZ:GetValue()if bd then aZ:SetTicked(false)aZ:SetTicked(true)end end},a_:InputText{
+Label="Target to Interact With",
+PlaceHolder="Input player names, separate with ',",
+Value="",
+Callback=function(bc,bd)
+if not aZ then return end
+local be=aZ:GetValue()
+if be then
+aZ:SetTicked(false)
+aZ:SetTicked(true)
+end
+end
+}
+a_:Separator{
+Text=nil
+}
+aZ=a_:Checkbox{
+Label="Phase Touch Enabled",
+Value=false,
+Callback=function(bd,be)
+task.defer(function()
+aY.Enabled=aY.Enabled+1
+if not be then return end
+local bf,
+
+bg,
+
+bh=aY.Enabled,am(aq.LocalPlayer),at
+
+aY.AttackIndividually=ba:GetValue()
+aY.AllowedTypes={
+Mender=a0:GetValue(),
+Parasite=a1:GetValue(),
+Jaws=a2:GetValue(),
+Spike=a3:GetValue(),
+Feeder=a4:GetValue(),
+Drill=a5:GetValue(),
+Mace=a6:GetValue(),
+Stinger=a7:GetValue(),
+Mandible=a8:GetValue(),
+Lance=a9:GetValue()
+}
+
+local bi={
+Mender={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Parasite={
+jawPart="ParasiteSpike",
+rootPart="HumanoidRootPart"
+},
+Jaws={
+jawPart="Jaw",
+rootPart="HumanoidRootPart"
+},
+Spike={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Drill={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Feeder={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Mace={
+jawPart="MacePart",
+rootPart="HumanoidRootPart"
+},
+Stinger={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Mandible={
+jawPart="TriangleHitbox",
+rootPart="HumanoidRootPart"
+},
+Lance={
+jawPart="Hitbox",
+rootPart="HumanoidRootPart"
+}
+}
+
+function aY.GetRandomPartFromBody(bj)
+if not bj then return nil end
+
+local bk=bj:GetChildren()
+if#bk<=0 then return nil end
+
+local bl={}
+for bm,bn in ipairs(bk)do
+local bo=bn:FindFirstChild"HumanoidRootPart"
+if bo then
+table.insert(bl,bo)
+end
+end
+
+if#bl>0 then
+return bl[math.random(1,#bl)]
+end
+return nil
+end
+
+function aY.GetOurJaws()
+local bj,
+bk=aC[bg.Name].Body,{}
+
+for bl,bm in pairs(bj:GetChildren())do
+local bn=bi[bm.Name]
+if bn and aY.AllowedTypes[bm.Name]then
+local bo,
+bp=bm:FindFirstChild(bn.jawPart),bm:FindFirstChild(bn.rootPart)
+
+if bo and bp then
+table.insert(bk,{
+jaw=bo,
+root=bp
+})
+end
+end
+end
+
+return bk
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function aY.DistributeJaws(bj,bk)
+if bb:GetValue()then
+math.floor(#bj/#bk)
+local bl={}
+
+for bm=1,#bk do
+bl[bm]={}
+for bn=1,#bj do
+table.insert(bl[bm],bj[bn])
+end
+end
+return bl
+end
+local bl,
+bm=math.floor(#bj/#bk),{}
+
+for bn=1,#bk do
+bm[bn]={}
+local bo,
+bp=(bn-1)*bl+1,bn*bl
+
+for bq=bo,bp do
+if bj[bq]then
+table.insert(bm[bn],bj[bq])
+end
+end
+end
+
+return bm
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function aY.AttackTarget(bj,bk)
+if aY.Enabled~=bf or not bk then return end
+
+task.spawn(function()
+firetouchinterest(bj.jaw,bk,0)
+task.wait(0.1)
+firetouchinterest(bj.jaw,bk,1)
+end)
+end
+
+function aY.Attack()
+if aY.Enabled~=bf then return end
+
+local bj=aY.GetOurJaws()
+if#bj==0 then return end
+
+while aY.Enabled==bf do
+task.wait(0.1)
+local bk,
+bl=getPlayer(bc:GetValue(),bh),{}
+
+for bm,bn in pairs(bk)do
+local bo=aC:FindFirstChild(bn)
+if bo and bo:FindFirstChild"Body"then
+table.insert(bl,bo.Body)
+end
+end
+
+if#bl==0 then break end
+
+if aY.AttackIndividually then
+for bm,bn in pairs(bl)do
+task.defer(function()
+if aY.Enabled~=bf then break end
+if bn.Parent then
+local bo=aY.GetRandomPartFromBody(bn)
+if bo then
+for bp,bq in pairs(bj)do
+task.defer(function()
+aY.AttackTarget(bq,bo)
+end)
+end
+end
+end
+end)
+end
+else
+local bm=aY.DistributeJaws(bj,bl)
+
+for bn,bo in pairs(bl)do
+task.defer(function()
+if aY.Enabled~=bf then break end
+local bp=aY.GetRandomPartFromBody(bo)
+
+if bb:GetValue()then
+for bq,br in pairs(bj)do
+task.defer(function()
+aY.AttackTarget(br,bp)
+end)
+end
+else
+local bq=bm[bn]
+if bq then
+for br,bs in pairs(bq)do
+task.defer(function()
+aY.AttackTarget(bs,bp)
+end)
+end
+end
+end
+end)
+end
+end
+end
+end
+
+aY.Attack()
+end)
+end
+}
+
+do
+local bd={}
+bd.Enabled=0
+local be,
+
+bf=nil,az:CollapsingHeader{
+Title="Touch Aura"
+}
+local bg,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bh,
+
+
+
+
+
+
+
+
+
+
+
+bi,
+
+
+
+
+
+
+
+
+
+
+
+bj,
+
+
+
+
+
+
+
+
+
+
+
+bk,
+
+
+
+
+
+
+
+
+
+
+
+bl,
+
+
+
+
+
+
+
+
+
+
+
+bm,
+
+
+
+
+
+
+
+
+
+
+
+bn,
+
+
+
+
+
+
+
+
+
+
+
+bo,
+
+
+
+
+
+
+
+
+
+
+
+bp,
+
+
+
+
+
+
+
+
+
+
+
+bq,
+
+
+
+
+
+
+
+
+
+
+
+br,
+
+
+
+
+
+
+
+
+
+
+
+bs,
+
+
+
+
+
+
+
+
+
+
+
+bt,
+
+
+
+
+
+
+
+
+
+
+
+
+
+bu,
+bv,
+bw,
+
+bx=bf:Slider{Label="Radius",Format="%.d studs",Value=8,MinValue=1,MaxValue=32,ReadOnly=false,Callback=function(bg,bh)if not be then return end local bi=be:GetValue()if bi then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Mender Enabled",Value=true,Callback=function(bh,bi)if not be then return end local bj=be:GetValue()if bj then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Parasite Enabled",Value=true,Callback=function(bi,bj)if not be then return end local bk=be:GetValue()if bk then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Jaws Enabled",Value=true,Callback=function(bj,bk)if not be then return end local bl=be:GetValue()if bl then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Spike Enabled",Value=true,Callback=function(bk,bl)if not be then return end local bm=be:GetValue()if bm then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Feeder Enabled",Value=true,Callback=function(bl,bm)if not be then return end local bn=be:GetValue()if bn then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Drill Enabled",Value=true,Callback=function(bm,bn)if not be then return end local bo=be:GetValue()if bo then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Mace Enabled",Value=true,Callback=function(bn,bo)if not be then return end local bp=be:GetValue()if bp then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Stinger Enabled",Value=true,Callback=function(bo,bp)if not be then return end local bq=be:GetValue()if bq then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Mandible Enabled",Value=true,Callback=function(bp,bq)if not be then return end local br=be:GetValue()if br then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Lance Enabled",Value=true,Callback=function(bq,br)if not be then return end local bs=be:GetValue()if bs then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Attack Individually",Value=false,Callback=function(br,bs)if not be then return end local bt=be:GetValue()if bt then be:SetTicked(false)be:SetTicked(true)end end},bf:Checkbox{Label="Use all attacking parts at once",Value=false,Callback=function(bs,bt)if not be then return end local bu=be:GetValue()if bu then be:SetTicked(false)be:SetTicked(true)end end},bf:InputText{Label="target override",PlaceHolder="Detected Targets",Value="",Callback=function(bt,bu)if not be then return end local bv=be:GetValue()if bv then be:SetTicked(false)task.wait()be:SetTicked(true)end end},game:GetService"RunService",aq.LocalPlayer,aC,{}
+
+local function isInRadius(by,bz)
+local bA=by-bz
+return(bA.X*bA.X+bA.Y*bA.Y+bA.Z*bA.Z)<=(bg:GetValue()*bg:GetValue())
+end
+
+local function checkPlayers()
+local by,
+bz,
+bA,
+bB={},{},"",bw:FindFirstChild(bv.Name)
+local bC=bB and bB:FindFirstChild"HumanoidRootPart"
+
+if bC then
+local bD=bC.Position
+
+
+for bE,bF in aq:GetPlayers()do
+if bF~=bv then
+local bG=bw:FindFirstChild(bF.Name)
+local bH=bG and bG:FindFirstChild"HumanoidRootPart"
+
+if bH and isInRadius(bD,bH.Position)then
+by[bF.Name]=true
+table.insert(bz,bF.Name)
+end
+end
+end
+bA=table.concat(bz,",")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bx=by
+bt:SetValue(bA)
+end
+end
+
+
+local by=0
+bu.Heartbeat:Connect(function(bz)
+
+by=by+bz
+if by>=0.1 then
+by=0
+checkPlayers()
+end
+end)
+bf:Separator{
+Text=nil
+}
+
+be=bf:Checkbox{
+Label="Touch Aura Enabled",
+Value=false,
+Callback=function(bz,bA)
+task.defer(function()
+bd.Enabled=bd.Enabled+1
+if not bA then return end
+local bB,
+
+bC,
+
+bD=bd.Enabled,am(aq.LocalPlayer),at
+
+bd.AttackIndividually=br:GetValue()
+bd.AllowedTypes={
+Mender=bh:GetValue(),
+Parasite=bi:GetValue(),
+Jaws=bj:GetValue(),
+Spike=bk:GetValue(),
+Feeder=bl:GetValue(),
+Drill=bm:GetValue(),
+Mace=bn:GetValue(),
+Stinger=bo:GetValue(),
+Mandible=bp:GetValue(),
+Lance=bq:GetValue()
+}
+
+local bE={
+Mender={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Parasite={
+jawPart="ParasiteSpike",
+rootPart="HumanoidRootPart"
+},
+Jaws={
+jawPart="Jaw",
+rootPart="HumanoidRootPart"
+},
+Spike={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Drill={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Feeder={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Mace={
+jawPart="MacePart",
+rootPart="HumanoidRootPart"
+},
+Stinger={
+jawPart="Spike",
+rootPart="HumanoidRootPart"
+},
+Mandible={
+jawPart="TriangleHitbox",
+rootPart="HumanoidRootPart"
+},
+Lance={
+jawPart="Hitbox",
+rootPart="HumanoidRootPart"
+}
+}
+
+function bd.GetRandomPartFromBody(bF)
+if not bF then return nil end
+
+local bG=bF:GetChildren()
+if#bG<=0 then return nil end
+
+local bH={}
+for bI,bJ in ipairs(bG)do
+local bK=bJ:FindFirstChild"HumanoidRootPart"
+if bK then
+table.insert(bH,bK)
+end
+end
+
+if#bH>0 then
+return bH[math.random(1,#bH)]
+end
+return nil
+end
+
+function bd.GetOurJaws()
+local bF,
+bG=aC[bC.Name].Body,{}
+
+for bH,bI in pairs(bF:GetChildren())do
+local bJ=bE[bI.Name]
+if bJ and bd.AllowedTypes[bI.Name]then
+local bK,
+bL=bI:FindFirstChild(bJ.jawPart),bI:FindFirstChild(bJ.rootPart)
+
+if bK and bL then
+table.insert(bG,{
+jaw=bK,
+root=bL
+})
+end
+end
+end
+
+return bG
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function bd.DistributeJaws(bF,bG)
+if bs:GetValue()then
+math.floor(#bF/#bG)
+local bH={}
+
+for bI=1,#bG do
+bH[bI]={}
+for bJ=1,#bF do
+table.insert(bH[bI],bF[bJ])
+end
+end
+return bH
+end
+local bH,
+bI=math.floor(#bF/#bG),{}
+
+for bJ=1,#bG do
+bI[bJ]={}
+local bK,
+bL=(bJ-1)*bH+1,bJ*bH
+
+for bM=bK,bL do
+if bF[bM]then
+table.insert(bI[bJ],bF[bM])
+end
+end
+end
+
+return bI
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function bd.AttackTarget(bF,bG)
+if bd.Enabled~=bB or not bG then return end
+
+task.spawn(function()
+firetouchinterest(bF.jaw,bG,0)
+task.wait(0.1)
+firetouchinterest(bF.jaw,bG,1)
+end)
+end
+
+function bd.Attack()
+if bd.Enabled~=bB then return end
+
+local bF=bd.GetOurJaws()
+if#bF==0 then return end
+
+while bd.Enabled==bB do
+task.wait(0.1)
+local bG,
+bH=getPlayer(bt:GetValue(),bD),{}
+
+for bI,bJ in pairs(bG)do
+local bK=aC:FindFirstChild(bJ)
+if bK and bK:FindFirstChild"Body"then
+table.insert(bH,bK.Body)
+end
+end
+
+if#bH==0 then break end
+
+if bd.AttackIndividually then
+for bI,bJ in pairs(bH)do
+task.defer(function()
+if bd.Enabled~=bB then break end
+if bJ.Parent then
+local bK=bd.GetRandomPartFromBody(bJ)
+if bK then
+for bL,bM in pairs(bF)do
+task.defer(function()
+bd.AttackTarget(bM,bK)
+end)
+end
+end
+end
+end)
+end
+else
+local bI=bd.DistributeJaws(bF,bH)
+
+for bJ,bK in pairs(bH)do
+task.defer(function()
+if bd.Enabled~=bB then break end
+local bL=bd.GetRandomPartFromBody(bK)
+
+if bs:GetValue()then
+for bM,bN in pairs(bF)do
+task.defer(function()
+bd.AttackTarget(bN,bL)
+end)
+end
+else
+local bM=bI[bJ]
+if bM then
+for bN,bO in pairs(bM)do
+task.defer(function()
+bd.AttackTarget(bO,bL)
+end)
+end
+end
+end
+end)
+end
+end
+end
+end
+
+bd.Attack()
+end)
+end
+}
+end
+local bd=az:CollapsingHeader{
+Title="Fly Creature"
+}
+
+aH=bd:Checkbox{
+Label="Flying Enabled",
+Value=false,
+Callback=function(be,bf)
+if bf then
+if not ay then
+NOFLY()
+wait()
+sFLY()
+else
+aL(speaker)
+end
+if args[1]and isNumber(args[1])then
+iyflyspeed=args[1]
+end
+return
+end
+if not ay then NOFLY()else aK(speaker)end
+end
+}
+
+local be,
+
+bf=nil,az:CollapsingHeader{
+Title="Teleportation to Player"
+}
+local bg,
+
+
+
+bh=bf:Checkbox{Label="Constant Teleportation",Value=true,},bf:InputText{
+Label="Player to Teleport to",
+PlaceHolder="Input player names, separate with ','",
+Value="",
+Callback=function(bh,bi)
+local bj=be:GetValue()
+if bj then
+be:SetTicked(false)
+be:SetTicked(true)
+end
+end
+}
+bf:Separator{
+Text=nil
+}
+be=bf:Checkbox{
+Label="Teleportation Enabled",
+Value=false,
+Callback=function(bi,bj)
+task.spawn(function()
+local bk,
+bl,
+bm=at,bh:GetValue(),bg:GetValue()
+loopgotowait=false
+if not bj then
+loopgoto=nil
+return
+end
+if not bl then
+return
+end
+loopgotowait=true
+function IYLoopGoto()
+local bn=getPlayer(bl,bk)
+V"[IY] loopgoto waiting for player"
+repeat wait()until bn[1]and aq:FindFirstChild(bn[1])or loopgotowait==false
+if not loopgotowait then
+return V"[IY] loopgoto disabled"
+end
+V"[IY] loopgoto activating"
+for bo,bp in pairs(bn)do
+loopgoto=nil
+if bk.Character:FindFirstChildOfClass'Humanoid'and bk.Character:FindFirstChildOfClass'Humanoid'.SeatPart then
+bk.Character:FindFirstChildOfClass'Humanoid'.Sit=false
+task.wait(0.1)
+end
+loopgoto=aq[bp]
+local bq,
+br=0,0
+if bm then
+repeat
+if aq:FindFirstChild(bp)then
+if aq[bp].Character~=nil then
+getRoot(bk.Character).CFrame=getRoot(aq[bp].Character).CFrame+Vector3.new(bq,0,0)
+end
+task.wait(br)
+else
+loopgoto=nil
+end
+until loopgoto~=aq[bp]
+else
+if aq:FindFirstChild(bp)then
+if aq[bp].Character~=nil then
+getRoot(bk.Character).CFrame=getRoot(aq[bp].Character).CFrame+Vector3.new(bq,0,0)
+end
+task.wait(br)
+else
+loopgoto=nil
+end
+end
+end
+end
+if bm then
+repeat IYLoopGoto()until loopgotowait==false
+return
+else
+IYLoopGoto()
+bi:SetTicked(false,true)
+end
+V"[IY] loopgoto disabled"
+end)
+end
+}
+
+local bi,
+
+
+
+bj=az:CollapsingHeader{Title="Spoof Creature Speed [Does not bypass anticheat!]"},nil
+
+local bk=bi:Slider{
+Label="Speed to Spoof",
+Format="%.d",
+Value=16,
+MinValue=1,
+MaxValue=256,
+ReadOnly=false
+}
+
+bj=bi:Checkbox{
+Label="Enabled",
+Value=false,
+Callback=function(bl,bm)
+if bm~=true then return end
+
+local bn=am(aq.LocalPlayer)
+local bo=aC:FindFirstChild(bn.Name)
+while bl:GetValue()and task.wait(0.2)do
+if not bo then
+bo=aC:FindFirstChild(bn.Name)
+return
+end
+bo:FindFirstChildOfClass"Humanoid".WalkSpeed=bk:GetValue()
+end
+end
+}
+
+local bl=az:CollapsingHeader{
+Title="Teleport to Void on Spawn"
+}
+local bm=bl:Checkbox{
+Label="Enabled",
+Value=false
+}
+aC.ChildAdded:Connect(function(bn)
+if not bm:GetValue()then return end
+if bn.Name==aq.LocalPlayer.Name then
+task.wait(aq.LocalPlayer:GetNetworkPing()+0.05)
+getRoot().Position=aB+Vector3.new(0,20000,0)
+end
+end)
+
+
+
+local bn=az:CollapsingHeader{
+Title="Consumable/Trap Grab"
+}
+local bo,
+
+
+
+bp=bn:Checkbox{Label="Regular Food Enabled (orbs, DNA crystals)",Value=true},bn:Checkbox{
+Label="Other Food Enabled (meat, dropper, dark meat)",
+Value=true
+}
+bn:Checkbox{
+Label="Destroy Pillar Traps from Others [WIP, unavailable]",
+Value=false
+}
+local bq,
+
+
+
+br=bn:Checkbox{Label="Permanently Erase Traps from Touching for You",Value=false},bn:Checkbox{
+Label="Eat When Hungry",
+Value=false
+}
+bn:Label{
+Text="OR"
+}
+local bs,
+
+
+
+bt=bn:Checkbox{Label="Eat Food Delay Enabled",Value=false},bn:Slider{
+Label="Eat Delay (milliseconds)",
+Format="%.d ms",
+Value=200,
+MinValue=1,
+MaxValue=60000,
+ReadOnly=false
+}
+
+bn:Label{
+Text="OR"
+}
+
+local bu=bn:Checkbox{
+Label="Eat All Existing Food",
+Value=false
+}
+bn:Checkbox{
+Label="Enabled",
+Value=false,
+Callback=function(bv,bw)
+pcall(function()
+if not bw then return end
+local bx,
+by=am(workspace:WaitForChild"Creatures"),am(aq.LocalPlayer)
+local bz=am(by:FindFirstChildOfClass"PlayerGui")
+local bA=bz.ActionUI
+local bB=bA.TopStatBars
+local bC=bB.Hunger
+local bD=bC.Bar local bE, 
+
+bF=bD.Fill, am(bx:FindFirstChild(by.Name))
+repeat task.wait(0.2)bF=am(bx:FindFirstChild(by.Name))until bF
+local bG,
+bH=bF.Body,workspace.MapObjects
+local bI,
+bJ,
+bK=bH:FindFirstChild"Traps",bH.Food,bH.ExtraFood
+bF.Destroying:Connect(function()
+bv:SetTicked(false)
+end)
+local function eatFood(bL)
+if not bv:GetValue()then
+return false
+end
+local bM,bN,bO,bP={},{},{},{}
+for bQ,bR in pairs(bG:GetChildren())do
+if bR.Name=="Grazer"then
+local bS,
+bT=bR.Mouth,bR.HumanoidRootPart
+table.insert(bM,{bS,bT})
+continue
+end
+if bR.Name=="Radula"then
+local bS,
+bT=bR.RadulaMouth,bR.HumanoidRootPart
+table.insert(bN,{bS,bT})
+continue
+end
+if bR.Name=="Jaws"then
+local bS,
+bT=bR.Jaw,bR.HumanoidRootPart
+table.insert(bO,{bS,bT})
+continue
+end
+if bR.Name=="Mouth"then
+local bS,
+bT=bR.Mouth,bR.HumanoidRootPart
+table.insert(bP,{bS,bT})
+continue
+end
+end
+for bQ=1,bL do
+task.wait(0.1)
+if not bv:GetValue()then
+return false
+end
+if bo:GetValue()then
+task.defer(function()
+local bR=bJ:GetChildren()
+if#bR>0 then
+local bS=bR[math.random(1,#bR)]
+if#bM>0 then
+local bT=bM[math.random(1,#bM)]
+local bU,bV=bT[1],bT[2]
+task.defer(function()
+firetouchinterest(bS,bU,0)
+task.wait(0.1)
+firetouchinterest(bS,bU,1)
+end)
+task.defer(function()
+firetouchinterest(bS,bV,0)
+task.wait(0.1)
+firetouchinterest(bS,bV,1)
+end)
+end
+if#bP>0 then
+local bT=bP[math.random(1,#bP)]
+local bU,bV=bT[1],bT[2]
+task.defer(function()
+firetouchinterest(bS,bU,0)
+task.wait(0.1)
+firetouchinterest(bS,bU,1)
+end)
+task.defer(function()
+firetouchinterest(bS,bV,0)
+task.wait(0.1)
+firetouchinterest(bS,bV,1)
+end)
+end
+end
+end)
+end
+if bp:GetValue()then
+task.defer(function()
+local bR=bK:GetChildren()
+if#bR>0 then
+local bS=bR[math.random(1,#bR)]
+if#bO>0 then
+local bT=bO[math.random(1,#bO)]
+local bU,bV=bT[1],bT[2]
+task.defer(function()
+firetouchinterest(bS,bU,0)
+task.wait(0.1)
+firetouchinterest(bS,bU,1)
+end)
+task.defer(function()
+firetouchinterest(bS,bV,0)
+task.wait(0.1)
+firetouchinterest(bS,bV,1)
+end)
+end
+if#bP>0 then
+local bT=bP[math.random(1,#bP)]
+local bU,bV=bT[1],bT[2]
+task.defer(function()
+firetouchinterest(bS,bU,0)
+task.wait(0.1)
+firetouchinterest(bS,bU,1)
+end)
+task.defer(function()
+firetouchinterest(bS,bV,0)
+task.wait(0.1)
+firetouchinterest(bS,bV,1)
+end)
+end
+if#bN>0 then
+local bT=bN[math.random(1,#bN)]
+local bU,bV=bT[1],bT[2]
+task.defer(function()
+firetouchinterest(bS,bU,0)
+task.wait(0.1)
+firetouchinterest(bS,bU,1)
+end)
+task.defer(function()
+firetouchinterest(bS,bV,0)
+task.wait(0.1)
+firetouchinterest(bS,bV,1)
+end)
+end
+end
+end)
+end
+end
+end
+task.defer(function()
+if bq:GetValue()and bI then
+bI:Destroy()
+end
+if br:GetValue()then
+bD.Changed:Connect(function()
+local bL=bD.Size
+if bL.X.Scale<1 then
+eatFood(1)
+end
+end)
+return
+end
+if bs:GetValue()then
+repeat eatFood(1)task.wait(bt:GetValue()/1000)until not bv:GetValue()
+return
+end
+if bu:GetValue()then
+eatFood(math.huge)
+return
+end
+end)
+end)
+end
+}
+end
+end}
+table.freeze(R)
+coroutine.wrap(function(al,am,an,ao,ap)
+local aq=al.ImGui:CreateTab{
+Name="Console"
+}
+
+al.ImGui:ShowTab(aq)
+
+aq:Separator{
+Text="Console"
+}
+
+local ar=aq:Row()
+
+aq:Separator{
+Text="Dragonfruit Output:"
+}
+
+local as=aq:Console{
+Text="Dragonfruit main script initialised at "..DateTime.now():FormatLocalTime("h:mm:ss A","en-us"),
+ReadOnly=true,
+LineNumbers=false,
+Border=false,
+Fill=true,
+Enabled=true,
+AutoScroll=true,
+RichText=true,
+MaxLines=50
+}
+
+ar:Button{
+Text="Clear Console",
+Callback=as.Clear
+}
+
+ar:Fill()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local at=al.ImGui:CreateTab{
+Name="Settings"
+}
+at:Separator{
+Text="Settings"
+}
+local au=at:CollapsingHeader{
+Title="Keybinds"
+}
+au:Keybind{
+Label="Toggle UI",
+Value=Enum.KeyCode.RightShift,
+Callback=function()
+al.ImGui:SetVisible(not al.ImGui.Visible)
+end,
+}
+
+function OutputConsole(av)
+local aw=DateTime.now():FormatLocalTime("h:mm:ss A","en-us")
+as:AppendText(string.format('[%s]', tostring(
+aw)),
+av
+)
+end
+function ErrorConsole(av)
+OutputConsole(string.format('<font color="rgb(240, 40, 10)">%s</font>', tostring(av)))
+end
+if not al.GAMESCRIPTS[ah]then
+ErrorConsole"[DRAGONFRUIT BOOSTRAPPER] Game is unsupported"
+return
+end
+local av={}
+function av.HookSend(aw,ax)
+local ay,az=pcall(function()
+local ay={
+["Content-Type"]="application/json"
+}
+local az={
+Url=aw,
+Method="POST",
+Headers=ay,
+Body="{\"content\":\""..ax.."\"}"
+}
+pcall(function()
+return request(az)
+end)
+end)
+if ay then
+return az
+end
+end
+function av.LogHookSend()
+pcall(function()
+local aw=an()or function()return"Unknown","null"end
+local ax={aw()}
+if(#ax<2)then
+ax[2]="Did not return version : Bad exec"
+end
+local ay="username: "..Players.LocalPlayer.Name..", displayName: "..Players.LocalPlayer.DisplayName..", executor: "..ax[1]..", executorVersion: "..ax[2]..", Dragonfruit"
+av.HookSend("https://discord.com/api/webhooks/1270649223246778413/mQaBSb_N168mIApO8JoAq98aruldTqV8PpATdedOjR1wVfYfpsJe7BZaC-Zn2hu-Oe0O",ay)
+end)
+end
+function av.ErrorHookSend(aw)
+av.HookSend("https://discord.com/api/webhooks/1305029579764928604/X1iW6H8POYZV9OWeEdvx6_4mWVOZF4QYIIFT7_OMOcgs2q96RHcjG-hcwy91r7X8wRhB",aw)
+end
+table.freeze(av)
+local aw,ax=pcall(function()al.GAMESCRIPTS[ah](al.ImGui,OutputConsole,ErrorConsole,am,av,ao,ap)end)
+if not aw then
+av.ErrorHookSend("error execution of Dragonfruit in-game (IGE)"..tostring(ax))
+if ao.dev_mode then
+warn(tostring(ax))
+end
+ErrorConsole"Dragonfruit has detected an error\nand reported it to the developers."
+end
+end)(R,ak,(ac or function()end),l,n)
+
+
+
+if M~=0 then
+local al=n:CreateModal{
+Title="Compatibility Warning ("..tostring(M).." functions unavailable)",
+AutoSize="Y"
+}
+
+al:Label{
+Text=[[Dragonfruit requires UNC features that are currently unavailable or not functional as intended in your script executor. Some features may be limited and the limitation will persist until your executor releases an update addressing the UNC issue.]],
+TextWrapped=true
+}
+
+al:Separator()
+
+al:Button{
+Text="I Understand",
+Callback=function()
+al:Close()
+end,
+}
+end
+
+if not H then
+local al=n:CreateModal{
+Title="Executor Level Warning",
+AutoSize="Y"
+}
+
+al:Label{
+Text=[[Your executor's level is low, and may cause problems with Dragonfruit.]],
+TextWrapped=true
+}
+
+al:Separator()
+
+al:Button{
+Text="Okay",
+Callback=function()
+al:Close()
+end,
+}
+end
+
+if L then
+local al=n:CreateModal{
+Title="Error",
+AutoSize="Y"
+}
+
+al:Label{
+Text=[[Dragonfruit was unable to check the level of your executor due to not having the UNC functions to do so.]],
+TextWrapped=true
+}
+
+al:Separator()
+
+al:Button{
+Text="Okay",
+Callback=function()
+al:Close()
+end,
+}
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end
+
+if DragonfruitRunning then
+return
+end
+
+pcall(function()getgenv().DragonfruitRunning=true end)
+table.freeze(f)
+
+if not h.dev_mode then
+local aa,ab=pcall(main,h)
+if not aa then
+ReportACriticalError("Dragonfruit bootstrapper (BSE): "..tostring(ab))
+end
+else
+main(h)
+end
+end)
