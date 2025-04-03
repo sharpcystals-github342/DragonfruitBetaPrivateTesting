@@ -5223,8 +5223,8 @@ return (function(__SECURITY_verifycaller_key)local ver,premium,dev;ver,premium,d
 					end
 				})
 				local PlayerValue = PhaseTouch:InputText({
-					Label = "target override [Read Only]",
-					PlaceHolder = "Read Only",
+					Label = "target override",
+					PlaceHolder = "Detected Targets",
 					Value = "",
 					Callback = function(self, Value)
 						if not Switch2 then return end
@@ -5237,7 +5237,7 @@ return (function(__SECURITY_verifycaller_key)local ver,premium,dev;ver,premium,d
 				})
 				local RunService = game:GetService("RunService")
 				local LocalPlayer = Players.LocalPlayer
-				local CreaturesFolder = workspace:WaitForChild("Creatures")
+				local CreaturesFolder = Creatures
 
 				local playersInRadius = {}
 
