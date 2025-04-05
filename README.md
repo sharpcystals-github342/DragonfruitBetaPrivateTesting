@@ -6,6 +6,10 @@ Activate the victim's spikes to touch the victim's spikes
 
 Float platform
 
+Todo: Make Unlimited Heal
+- Make mender touch itself
+- Maybe feeder touch itself
+
 ## Latest Stable Version
 
 DragonfruitBetaV56Release
