@@ -4,6 +4,8 @@ Notice that, when a creature victim is grabbed by a Mandible, the actor gains cl
 Activate the victim's spikes to touch the victim's spikes
 (An attack part touching itself was not discluded and is an unintentional bug from Evolve)
 
+Float platform
+
 ## Latest Stable Version
 
 DragonfruitBetaV56Release
