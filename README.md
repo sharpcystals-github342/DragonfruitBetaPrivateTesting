@@ -12,4 +12,6 @@ Todo: Make Unlimited Heal
 
 ## Latest Stable Version
 
-DragonfruitBetaV68Release
+DragonfruitBetaV69Release
+
+v69. Finally released.
